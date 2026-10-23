@@ -25,11 +25,11 @@ Each row is checked for duplicate codes, credits that aren't numbers or are nega
 ## Test results (2026-10-23, Chromium-based browser, local server)
 | # | Test | Expected | Actual | Pass |
 |---|---|---|---|---|
-| T1 | Real data, Sem VIII included | 166 → 166, balanced, 37 affected, 22.3%, no errors | 166 → 166, Balanced ✓, 37, 22.3%, no errors | ✅ |
-| T2 | Sem VIII excluded | 151 → 151, 37, 24.5% | 151 → 151, 37, 24.5% | ✅ |
-| T3 | Filter Full Stack + ADD | NEW-SE1 only | NEW-SE1 | ✅ |
-| T4 | Invalid synthetic rows (UPDATE changes credits, duplicate code, REDUCE that increases) | 3 errors | 3 matching errors | ✅ |
-| T5 | Unbalanced synthetic data (KEEP 4 + ADD 2) | not balanced, 2 of 4 = 50% | balanced=false, 50% | ✅ |
+| T1 | Real data, Sem VIII included | 166 → 166, balanced, 37 affected, 22.3%, no errors | 166 → 166, Balanced, 37, 22.3%, no errors | Pass |
+| T2 | Sem VIII excluded | 151 → 151, 37, 24.5% | 151 → 151, 37, 24.5% | Pass |
+| T3 | Filter Full Stack + ADD | NEW-SE1 only | NEW-SE1 | Pass |
+| T4 | Invalid synthetic rows (UPDATE changes credits, duplicate code, REDUCE that increases) | 3 errors | 3 matching errors | Pass |
+| T5 | Unbalanced synthetic data (KEEP 4 + ADD 2) | not balanced, 2 of 4 = 50% | balanced=false, 50% | Pass |
 
 The same totals are produced independently by `py check_credits.py`, which also runs on GitHub on every upload.
 

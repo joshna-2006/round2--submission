@@ -33,7 +33,7 @@ Ask on class groups: "Has anyone replaced their ID card? 1 minute of questions, 
 
 ## C. After collecting
 1. Add each conversation to [evidence-log.md](evidence-log.md) with the date and a label: F (fact told to me), E (estimate), A (assumption).
-2. Mark V1–V8 in the evidence log as ✅ / ✏️ / ❌.
+2. Mark V1–V9 in the evidence log as confirmed, corrected or wrong.
 3. Put the medians into `../prototype/params.json`, set `"label": "observed"`, and set `"source"` to the log entry.
 4. Run `py savings.py` again and copy the new result into [../time-saving.md](../time-saving.md).
 5. If H1 is not supported, say so in the report.

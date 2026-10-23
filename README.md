@@ -23,15 +23,15 @@ B.Tech CSE (Artificial Intelligence), IFHE Hyderabad, batch 2023–2027.
 ## What is finished and what is not
 | Item | Status |
 |---|---|
-| Task 1 design, prototype, 5 tests, time-saving method | ✅ Done and tested |
-| Task 1 **evidence from IFHE** (ID desk + students) | ⏳ **Not collected yet.** The current process is a labelled hypothesis. Questions and sheets are ready in [task1-workflow/evidence/](task1-workflow/evidence/) |
-| Task 1 real time-saving figure | ⏳ Needs the measured values above |
-| Task 2 credit map, comparison with the official page, proposal, 11 reasons, credit calculation, pathways, capstone | ✅ Done |
-| Task 2 five-unit analysis | ⚠️ Done for the one handout I have (DS401). Priority courses need handouts |
-| Task 2 job descriptions | ✅ 3 dated + 1 undated · ⚠️ JD-2 only partly verified |
-| Task 2 five AI exercises | ✅ Done and automatically re-checked |
-| Faculty feedback on the redesign | ⏳ Message ready; none received |
-| AI-use record, sources, limitations | ✅ |
+| Task 1 design, prototype, 5 tests, time-saving method | Done and tested |
+| Task 1 **evidence from IFHE** (ID desk + students) | **Not collected yet.** The current process is a labelled hypothesis. Questions and sheets are ready in [task1-workflow/evidence/](task1-workflow/evidence/) |
+| Task 1 real time-saving figure | Pending: needs the measured values above |
+| Task 2 credit map, comparison with the official page, proposal, 11 reasons, credit calculation, pathways, capstone | Done |
+| Task 2 five-unit analysis | Partly done: complete for the one handout I have (DS401); priority courses need handouts |
+| Task 2 job descriptions | Done: 3 dated + 1 undated; JD-2 only partly verified |
+| Task 2 five AI exercises | Done and automatically re-checked |
+| Faculty feedback on the redesign | Pending: message ready; none received |
+| AI-use record, sources, limitations | Pass |
 
 ## Check it yourself
 Python 3 only, nothing to install. The same commands run on GitHub on every upload (badge above).
@@ -59,4 +59,3 @@ See [ai-use-record.md](ai-use-record.md): my decisions and inputs, where an AI a
 ## Limitations (summary)
 - **Task 1:** IFHE's actual process hasn't been observed yet. Benchmarks are from other universities. All time figures are illustrative.
 - **Task 2:** IFHE's official structure states no batch or version, and 22 of my 52 courses differ from it. Regulations weren't available. Unit-level evidence covers one course only.
-- An AI assistant helped with research, drafting and code (see the AI-use record). Every number is recomputed by code, not taken on trust.

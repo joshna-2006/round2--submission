@@ -190,7 +190,7 @@ function render(){
     || '<tr><td colspan="11">No courses match these filters.</td></tr>';
   const c=calc(scope);
   sOld.textContent=c.oldT; sNew.textContent=c.newT;
-  sBal.textContent=c.balanced?"Balanced ✓":`Off by ${c.newT-c.oldT}`; sBal.className=c.balanced?"ok":"warn";
+  sBal.textContent=c.balanced?"Balanced":`Off by ${c.newT-c.oldT}`; sBal.className=c.balanced?"ok":"warn";
   sAff.textContent=c.affected;
   sPct.textContent=c.pct.toFixed(1)+"%"; sPct.className=(c.pct>=20&&c.pct<=25)?"ok":"warn";
   sRole.textContent=role?scope.filter(r=>r.roles.split(";").includes(role)).reduce((x,r)=>x+r.proposed_credits,0):"–";

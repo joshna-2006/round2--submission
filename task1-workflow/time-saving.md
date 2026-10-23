@@ -1,6 +1,6 @@
 # 5. Net Time Saved
 
-> ⚠️ **ILLUSTRATIVE.** All 14 inputs are still illustrative (see [prototype/params.json](prototype/params.json)). This page shows **the method and a worked example**. It is not a finding. It becomes one once the values are replaced with evidence (see [evidence/what-to-verify.md](evidence/what-to-verify.md)).
+> **ILLUSTRATIVE.** All 14 inputs are still illustrative (see [prototype/params.json](prototype/params.json)). This page shows **the method and a worked example**. It is not a finding. It becomes one once the values are replaced with evidence (see [evidence/what-to-verify.md](evidence/what-to-verify.md)).
 
 ## Formula
 ```

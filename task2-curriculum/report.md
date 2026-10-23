@@ -152,8 +152,8 @@ Everyone takes the common core, i.e. every KEEP/UPDATE course plus NEW-SE1. The 
 | Updated (3+4+3+4+3+3+4+3+4+3) | 34 | 34 |
 | Reallocated: reduced 3, added 3 → counted once | 3 | 3 |
 | **Affected** | **37** | **37** |
-| **Affected %** | **22.3%** ✅ | **24.5%** ✅ |
-| Proposed total | 166, balanced ✅ | 151, balanced ✅ |
+| **Affected %** | **22.3%** (in range) | **24.5%** (in range) |
+| Proposed total | 166, balanced | 151, balanced |
 | Retained unchanged | 129 | 114 |
 
 The figure stays within 20–25% **whether or not** the Sem VIII credits are counted, so the uncertainty about Sem VIII doesn't change the conclusion.

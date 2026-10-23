@@ -1,6 +1,6 @@
 # 2. Current Process (as-is): **HYPOTHESIS, NOT YET VERIFIED**
 
-> Everything on this page is my **expected** version of the process, written before collecting evidence. Each step has a check-ID. After I ask the ID desk and students, I mark each step ✅ confirmed, ✏️ corrected, or ❌ wrong in [evidence/evidence-log.md](evidence/evidence-log.md). Until then, none of this is presented as fact.
+> Everything on this page is my **expected** version of the process, written before collecting evidence. Each step has a check-ID. After I ask the ID desk and students, I mark each step as confirmed, corrected or wrong in [evidence/evidence-log.md](evidence/evidence-log.md). Until then, none of this is presented as fact.
 
 ```mermaid
 flowchart LR

@@ -10,7 +10,7 @@ So this file has:
 
 ## Part A – DS401 Human Computer Interaction (3 credits, L3-T0-P0) [official handout]
 
-*Note: DS401 appears in neither my Sem I–VII screenshots nor the official AI-track elective list, but the handout's CO–PO table covers the CSE (AI) programme. It may be an open elective. I use it here because it's the only real unit-level document I have.*
+*DS401 appears in neither my Sem I–VII screenshots nor the official AI-track elective list, but the handout's CO–PO table covers the CSE (AI) programme. It may be an open elective. I use it here because it's the only real unit-level document I have.*
 
 | Unit | Official topics (summary) | Roles | Coverage | Evidence from the handout | Recommendation |
 |---|---|---|---|---|---|
@@ -48,4 +48,4 @@ These carry the most job-relevant skills (see the matrix in [job-description-ana
 | IV | | | | | | | |
 | V | | | | | | | |
 
-**Status:** ⏳ not done. If a handout shows a skill is already taught, I will change that reason in the report from UPDATE to KEEP.
+**Status:** not done yet. If a handout shows a skill is already taught, I will change that reason in the report from UPDATE to KEEP.

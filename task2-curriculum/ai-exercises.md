@@ -4,7 +4,7 @@
 - **Date:** 2026-10-23
 - **Who did what:** the prompts were sent to, and answered by, the AI assistant. The checks are independent of the AI's answer: code was run, SQL was executed on a database built to contain a trap, metrics were calculated by hand, and cloud claims were compared with official AWS pages.
 - **Repeatable:** `py verify.py` in [ai-outputs/](ai-outputs/) re-runs checks 1–4 and fails loudly if any answer is wrong (9 of 9 checks pass). The same script runs on GitHub on every upload.
-- ☐ **I re-ran `verify.py` myself and got 9 of 9** (tick after doing it)
+- [ ] **I re-ran `verify.py` myself and got 9 of 9** (tick after doing it)
 
 | # | Subject | Result |
 |---|---|---|
@@ -44,8 +44,8 @@ GROUP BY s.dept HAVING COUNT(DISTINCT s.sid) > 2;
 ```
 
 **How I checked:** I made a small fake database. CSE has 3 different students with A. ECE has only 2, but one ECE student has three A's. Working it out by hand, the answer should be **CSE only**.
-- AI query → `[('CSE', 3)]` ✅
-- The same query with `COUNT(*)` instead → `[('CSE', 3), ('ECE', 4)]` ❌. It counts grades, not students.
+- AI query → `[('CSE', 3)]` Done
+- The same query with `COUNT(*)` instead → `[('CSE', 3), ('ECE', 4)]` No. It counts grades, not students.
 
 **What I learned:** Code can look right and still be wrong. You only catch this kind of mistake by testing with tricky data.
 
@@ -62,8 +62,8 @@ GROUP BY s.dept HAVING COUNT(DISTINCT s.sid) > 2;
 **AI output (summary):** EC2 gives 750 hours/month of t2.micro/t3.micro for 12 months. Lambda gives 1 million requests and 400,000 GB-seconds per month.
 
 **How I checked:** Read the official pages on 2026-10-23.
-- Lambda: https://aws.amazon.com/lambda/pricing/ says "one million requests and 400,000 GB-seconds per month" ✅
-- EC2: https://aws.amazon.com/free/ now describes a **credit-based free plan**: $100 in credits, up to $200 total, and the account lasts 6 months. It doesn't mention "750 hours for 12 months" ❌. **The AI's EC2 answer is outdated.**
+- Lambda: https://aws.amazon.com/lambda/pricing/ says "one million requests and 400,000 GB-seconds per month" Done
+- EC2: https://aws.amazon.com/free/ now describes a **credit-based free plan**: $100 in credits, up to $200 total, and the account lasts 6 months. It doesn't mention "750 hours for 12 months" No. **The AI's EC2 answer is outdated.**
 
 **What I learned:** AI can be confidently out of date about things that change, like prices and limits. Cloud courses should teach students to check official docs.
 

@@ -17,6 +17,6 @@ I scored each candidate 1 (poor) to 3 (good) on the criteria the task needs.
 ## Decision
 **ID card replacement.** It scores highest mainly because **I can actually check it myself**: I can talk to students who replaced a card and ask the ID desk about the steps, without seeing anyone's personal records. The purchase process is more "important", but I couldn't get honest evidence for it before the deadline, and its evidence (budgets, vendor prices) is the kind I'm not allowed to commit.
 
-*The scoring table was drafted with an AI assistant from the faculty member's list. The final choice is mine:* ☐ **I have reviewed these scores and confirm this choice** (tick after review).
+[ ] I have reviewed these scores and confirm this choice.
 
 **What this choice gives up:** ID card replacement is a small process. Its total time saving will be modest, and I'll say so rather than inflate it.

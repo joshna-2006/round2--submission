@@ -46,7 +46,7 @@ Access date for all research below: **2026-10-23**.
 | Exact title | AI Engineer (Fresher / Entry-Level) |
 | Company | Keywords Studios (Helpshift engineering team) |
 | Location | Pune, India (hybrid), full-time |
-| Posting date | **2026-06-15** (shown on a Workable copy of the listing in search results). ⚠️ I couldn't load the original page directly, so **I must open the link and confirm the date and requirements** |
+| Posting date | **2026-06-15** (shown on a Workable copy of the listing in search results). I couldn't load the original page directly, so **I must open the link and confirm the date and requirements** |
 | URL | https://apply.workable.com/keywords-intl1/jobs/view/C8BF016A6E |
 | Level | Fresher / entry-level |
 
@@ -98,7 +98,7 @@ Access date for all research below: **2026-10-23**.
 
 ## Comparison matrix: job skills vs. my courses
 
-Legend: **R** = required, **P** = preferred. Coverage is based on **course titles only** (⚠️ unverified), except where official syllabus units were available.
+Legend: **R** = required, **P** = preferred. Coverage is based on **course titles only** (unverified), except where official syllabus units were available.
 
 | Skill | JD-1 DA | JD-2 AI | JD-3 FS | JD-4 ML | Courses that may cover it | Coverage |
 |---|---|---|---|---|---|---|
@@ -107,9 +107,9 @@ Legend: **R** = required, **P** = preferred. Coverage is based on **course title
 | Data structures & algorithms | – | R | – | – | CS102, CS203 | Likely covered (unverified) |
 | ML fundamentals | – | R | – | R | DS304, ML201, DS309 | Likely covered (unverified) |
 | NLP / LLM / RAG | – | R | – | – | DS311 NLP, DS408 Generative AI | Partial: RAG and LLM APIs not confirmed |
-| API development (REST/FastAPI) | – | R | P | – | CS205 Web-Enabled Technologies | ⚠️ Unknown whether APIs are taught |
+| API development (REST/FastAPI) | – | R | P | – | CS205 Web-Enabled Technologies | Unknown whether APIs are taught |
 | Dashboards / reports | R | – | – | – | DS305 Data Wrangling & Visualization | Partial: tool (Power BI/Tableau) unknown |
-| Statistics for evaluation | P (detail) | – | – | R | ML201 (my batch); the official page has BS105 Probability & Statistics instead | ⚠️ My batch has no course titled statistics; the newer official structure does |
+| Statistics for evaluation | P (detail) | – | – | R | ML201 (my batch); the official page has BS105 Probability & Statistics instead | My batch has no course titled statistics; the newer official structure does |
 | Testing your own code | – | – | R | – | **None found** in my screenshots or on the official page | **Gap** |
 | Git / version control / CI/CD | – | – | P | R | Possibly DS202 / ES202 Industry Coding Practice (unverified); no dedicated course | **Gap** |
 | Cloud deployment | – | (deploy) | P | R | CS307 Cloud Computing | Partial: hands-on deployment unknown |

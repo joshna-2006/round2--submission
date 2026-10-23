@@ -138,7 +138,7 @@ Full data: [proposed-curriculum.csv](proposed-curriculum.csv). Interactive view:
 | REDUCE | MT101 Digital Fabrication | 3 → 2 | R9 |
 | ADD | NEW-ST1 Applied Statistics & Probability for Data Analysis (Sem II) | 0 → 3 | R4 |
 | ADD | NEW-SE1 Software Engineering & Testing Lab (Sem V) | 0 → 2 | R1 |
-| ADD | NEW-CP1 Capstone: Admission Document Workflow (Sem VII) | 0 → 3 | R10 |
+| ADD | NEW-CP1 Capstone: Purchase Approval Workflow (Sem VII) | 0 → 3 | R10 |
 | KEEP | All other 39 courses | unchanged | – |
 
 **Not removed on purpose:** Blockchain, Quantum Computing, Embedded Systems, IoT and the general-education courses are kept. They don't appear in my four JDs, but four JDs aren't enough reason to remove foundational or breadth courses.
@@ -153,7 +153,7 @@ Full data: [proposed-curriculum.csv](proposed-curriculum.csv). Interactive view:
 - Objectives: Git branching and pull requests; code review; unit and integration tests (pytest/JUnit); a simple CI pipeline (GitHub Actions); debugging; checking AI-generated code.
 - Why: JD-3 requires testing your own work, JD-3 and JD-4 mention CI/CD or DevOps, and no course title covers this.
 
-**NEW-CP1 Capstone: Admission Document Workflow**: Sem VII, 3 credits. See section I.
+**NEW-CP1 Capstone: Purchase Approval Workflow**: Sem VII, 3 credits. See section I.
 
 ### Three pathways (flexible, not all mandatory)
 
@@ -230,23 +230,23 @@ See [ai-exercises.md](ai-exercises.md): five subjects (CS201, CS203, CS206, DS30
 
 ---
 
-## I. Capstone: Admission Document Pre-Verification System (from Task 1)
+## I. Capstone: Purchase Approval Workflow (from Task 1)
 
 Based on [Task 1](../task1-workflow/report.md). The Task 1 figures are estimates, so the capstone's first job is to measure them properly.
 
 | Item | Proposal |
 |---|---|
-| Problem | New students' documents are checked only on reporting day, causing queues, repeat visits and manual follow-up of pending documents (Task 1, mostly assumptions and estimates) |
-| Learning objectives | 1) Model a real process as states and transitions. 2) Build a validated multi-layer app (upload form → API → DB). 3) Enforce role-based access and approval limits. 4) Write tests for normal and failure cases. 5) Measure time saved and reliability |
+| Problem | Department equipment purchases move as a paper file through HOD → Dean → Director → VC → Governing Body, with no status visibility and late discovery of missing quotations (Task 1; hierarchy told to me by faculty, the rest assumptions and estimates) |
+| Learning objectives | 1) Model a real process as states and transitions. 2) Build a validated multi-layer app (request form → API → DB). 3) Enforce role-based, amount-based approval limits. 4) Write tests for normal and failure cases. 5) Measure time saved and reliability |
 | Prerequisites | CS205, CS206, NEW-SE1 (CS201 recommended) |
-| Scope / inputs | Synthetic applicants only: application number, document type, scanned file, original available (yes/no), expected date. **No real student data** |
-| Workflow | Not-Started → Uploaded → Pre-Verified / Needs-Correction → Original-Verified → Complete; also Pending-Document, Escalated |
-| Owner / approval limits | Admissions office in-charge owns the process; desk staff verify standard documents; the admissions head approves undertakings, extensions and mismatches |
-| Fallback | Paper checklist if the system is down (scans uploaded later); deputy approver if the head is absent |
-| Test cases | The same 5 as Task 1 [test-cases.md](../task1-workflow/test-cases.md): normal, missing TC, duplicate upload, unauthorized access, portal down |
-| Measurements | Median reporting-day time per student; % of students needing an extra visit; % of tests passing; net time saved = gross − review − support − setup effort |
+| Scope / inputs | Synthetic requests only: department, item/configuration, quantity, reason, budget head, 3 quotations, amount. **No real vendor or financial data** |
+| Workflow | Draft → Submitted → Under-Approval → Approved → PO-Issued → Delivered → Paid → Closed; also Returned-for-Info, Rejected, On-Hold |
+| Owner / approval limits | Purchase/Accounts officer owns the process; approvers act only within their amount limit; above ₹25 lakh goes to the Governing Body (example limits) |
+| Fallback | Paper file on the same form if the system is down; delegated approver after 3 days' absence; next-best vendor if delivery fails |
+| Test cases | The same 5 as Task 1 [test-cases.md](../task1-workflow/test-cases.md): normal, missing quotation, duplicate request, approval above the limit, vendor delivery failure |
+| Measurements | Median days from request to delivery; % of requests returned for info; % of tests passing; net time saved = gross − review − support − setup effort |
 | Rubric | Process model 20%, working app 25%, tests and failure handling 25%, metrics and report 20%, demo 10% |
-| Pathways | FS: portal and API. AI: auto-check for missing or invalid fields. DA: metrics dashboard |
+| Pathways | FS: request portal and API. AI: auto-check quotations for missing fields. DA: spending and delay dashboard |
 | Credits | 3. Comparable to SP301 Special Project (3 credits) for one semester of team project work |
 
 ---

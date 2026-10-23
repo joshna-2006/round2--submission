@@ -1,20 +1,20 @@
 # Synthetic Test Cases
 
-All data is fake. "APP-101" etc. are made-up application numbers. These are design walk-throughs of the proposed process, **not real-world observations**.
+All data is fake (REQ-01 etc.). These are walk-throughs of the proposed design, **not real observations**. Approval limits are the example values from the report.
 
-| # | Case | Input | Expected result | Status after | Recovery |
+| # | Case | Input | Expected result | Final status | Recovery |
 |---|---|---|---|---|---|
-| 1 | **Normal** | APP-101 uploads all 6 documents; names match | Staff pre-check, then the original is matched on reporting day | Pre-Verified → Original-Verified → Complete | – |
-| 2 | **Missing information** | APP-102 has no TC (old college hasn't issued it); marks "original available: no, expected 15 Aug" | Can't be completed. An undertaking goes to the admissions head, and a due date is set | Pending-Document | Reminder 3 days before the due date. If it's missed, Escalated to the admissions head |
-| 3 | **Duplicate** | APP-103 uploads the Inter memo twice (or two records exist for the same application number) | The system flags the duplicate; staff keep the latest and discard the other | Uploaded (one copy kept) | Student is told which copy was kept; nothing is lost |
-| 4 | **Unauthorized request** | Someone without the student's login tries to view APP-104's documents, or a person who isn't the student or a listed parent asks to collect originals | Denied; the attempt is logged | No change | The student and admissions office are informed. Originals are released only with ID and written consent |
-| 5 | **Failed step** | The form/portal is down on reporting day | The desk switches to the paper checklist | Original-Verified (on paper) | Staff upload the scans within 2 days; the status is updated in the sheet |
+| 1 | **Normal** | REQ-01: CSE dept, 5 monitors, ₹40,000, 3 quotations attached | Needs only HOD + Dean (under ₹50,000). Both approve; Accounts issues the PO | Approved → PO-Issued → Delivered → Paid → Closed | – |
+| 2 | **Missing information** | REQ-02: lab PCs, ₹4 lakh, only **2 quotations** | The system won't move it to approval | Returned-for-Info | Department adds the 3rd quotation and resubmits; it continues from where it was |
+| 3 | **Duplicate** | REQ-03: CSE requests the same 5 monitors again within 30 days | Flagged as a possible duplicate of REQ-01 and linked to it | On-Hold | HOD confirms whether it's a genuine second need; if not, it is Rejected |
+| 4 | **Unauthorized request** | REQ-04: ₹8 lakh, and the HOD tries to give final approval | Blocked: above the HOD's limit. Routed to Dean → Director → VC | Under-Approval (VC level) | Logged for the Accounts audit; no PO can be raised without the right approvals |
+| 5 | **Failed step** | REQ-05: approved, but the vendor misses the delivery date by 2 weeks | Owner is alerted | On-Hold | Next-best quotation vendor is contacted; the PO is re-issued after approver sign-off |
 
-## Results (design walk-through, done 2026-10-23)
-| # | Handled by the design? | Note |
+## Results (design walk-through, 2026-10-23)
+| # | Handled? | Note |
 |---|---|---|
-| 1 | Yes | – |
-| 2 | Yes | Depends on the admissions head being available. The deputy rule covers this |
-| 3 | Yes | Needs a simple "one file per document type" rule in the sheet |
-| 4 | Yes | Needs logins. A plain Google Form can't do this alone, which is a limitation |
-| 5 | Yes | Paper fallback means double entry later (counted as support effort) |
+| 1 | Yes | Small purchases skip Director/VC, which is the main time saving |
+| 2 | Yes | Simple "3 files required" rule |
+| 3 | Yes | Needs a rule: same department + same item within 30 days |
+| 4 | Yes | Needs each user's approval limit stored |
+| 5 | Yes | Depends on keeping the other quotations on file |

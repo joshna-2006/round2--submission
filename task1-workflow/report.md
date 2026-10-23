@@ -1,78 +1,86 @@
-# Task 1 – Admission Document Submission and Verification
+# Task 1 – Department Equipment Purchase Approval
 
-**Process studied:** how new B.Tech students submit and get their certificates verified when joining IFHE (when I joined: 10th memo, Inter memo, Transfer Certificate, Aadhaar, photos).
+**Process studied:** how a department at IFHE buys equipment (for example, computers for a lab) from a vendor: request → vendor quotations → approvals → purchase → payment.
 
-**Why this process:** every new student goes through it, it has clear handoffs and exceptions (missing TC, name mismatch), and I went through it myself when I joined in 2023.
+**Why this process:** a faculty member described it to me, so there is real evidence. It also has a clear approval hierarchy, money-based decisions and several places where it can go wrong.
 
-**Labels used:** **[F]** Fact (I experienced or saw it) · **[E]** Estimate · **[A]** Assumption (not confirmed) · **[P]** Proposed design. Evidence is in [evidence-log.md](evidence-log.md).
+**Labels:** **[F]** Fact (told to me by faculty) · **[E]** Estimate · **[A]** Assumption (not confirmed) · **[P]** Proposed design. Evidence: [evidence-log.md](evidence-log.md).
 
 ---
 
-## 1. Current process (as I understand it)
+## 1. Current process
 
+What the faculty member told me [F]:
+- Purchases go through **budget and vendor** steps, where **price, service and configuration/quantity** are compared.
+- What is bought **depends on the department's activity**.
+- The approval **hierarchy** is HOD, Deans, Director, Vice Chancellor and management, with the **Governing Body at the head office (Panjagutta)** as the **financial authority**.
+- **Accounts** and **admin** offices are involved.
+
+How the steps probably fit together [A]:
 ```
-Admission confirmed → Student gets list of documents → Reporting day: queue at verification desk
-→ Staff check each original against photocopies → (missing doc? → sign undertaking, submit later)
-→ College keeps some originals (TC, etc.), returns others → Receipt given → Data entered in system
-→ Pending documents followed up manually
+HOD writes request (item, quantity, reason)
+→ Department collects vendor quotations (price, service, configuration)
+→ Dean approves → Director approves → VC approves
+→ Large amounts: Governing Body, head office (financial authority)
+→ Accounts raises purchase order → Vendor delivers → Accounts pays
 ```
 
 | Step | Who | Hands off to | Evidence |
 |---|---|---|---|
-| 1. Send document checklist | Admissions office | Student | [A] |
-| 2. Bring originals + copies on reporting day | Student | Verification desk | [F] my own joining, 2023 |
-| 3. Wait in queue | Student | – | [F] / [E] waiting time |
-| 4. Check originals vs. copies | Desk staff | Admissions office | [A] |
-| 5. Missing document → undertaking with due date | Staff + student | Admissions head (approves) | [A] |
-| 6. Keep TC/originals, give receipt | Desk staff | Student | [A] |
-| 7. Enter data, follow up pending documents | Admissions office | Student | [A] |
+| 1. Request with item, quantity, reason | HOD / department | Dean | [A] |
+| 2. Vendor quotations: price, service, configuration | Department | Approvers | [F] the comparison points; [A] who collects them |
+| 3. Approvals | Dean → Director → VC | Next level | [F] the hierarchy exists; [A] the order |
+| 4. Final financial approval (big amounts) | Governing Body, Panjagutta head office | Accounts | [F] it is the financial authority |
+| 5. Purchase order, delivery, payment | Accounts / admin, vendor | Department | [F] accounts and admin are involved; [A] the exact steps |
 
-**Exceptions:** a document is missing (often the TC, because the old college hasn't issued it yet), the name or date of birth doesn't match across documents, a parent comes instead of the student, or a student later needs an original back. [A]
+**Exceptions** [A]: a missing or incomplete quotation; an approver who is away; the same item requested twice; a vendor who delivers late or delivers the wrong configuration.
 
 ## 2. The problem
-On reporting day, hundreds of students arrive with their documents at the same time. Problems are found **only at the desk**: a missing TC, a wrong copy, a name mismatch. That means long queues, repeat visits, and pending documents that are tracked by hand with no status the student can see. [A, to be confirmed with the admissions office]
+A paper file moves **one office at a time**, so [A, to be confirmed]:
+- nobody can see **where a request is stuck**
+- a **missing quotation** found at a later level sends the file **back to the start**
+- **small purchases** may go through the **same long chain** as big ones
+- departments wait **weeks** for equipment they need for teaching
 
 ## 3. Scale (estimates)
 | Item | Value | Label |
 |---|---|---|
-| New students per intake (B.Tech) | ~600 | [E] |
-| Student time on verification day (queue + check) | ~180 min | [F] mine was about 3 hours; used as the typical value [E] |
-| Students with at least one pending or wrong document | ~30% | [E] |
-| Extra visit for a pending document | ~60 min | [E] |
-| Staff time per student | ~10 min (+10 min per follow-up) | [E] |
+| Purchase requests per year (whole university) | ~200 | [E] |
+| Staff effort per request (preparing, quotations, approvals, accounts) | ~8.6 hours | [E] |
+| Requests sent back for missing information | ~30% | [E] |
+| Time from request to delivery | ~30 days | [E] |
 
-**Current total ≈ 600 × 211 min ≈ 2,110 hours per intake** (student time plus staff time; see [time-saved.md](time-saved.md)).
+**Current effort ≈ 200 × 516 min ≈ 1,720 staff hours per year** (see [time-saved.md](time-saved.md)).
 
 ## 4. Proposed process [P]
 
-**Idea:** check documents **before** reporting day, so the desk only matches originals.
+**Idea:** one **tracked digital request**, checked for completeness at the start, with **approval limits based on the amount**, so small purchases don't climb the whole ladder.
 
 ```
-Admission confirmed → Student uploads scans on a form (before joining)
-→ Staff pre-check → Needs-Correction (student fixes from home) or Pre-Verified
-→ Reporting day: quick original match only → Complete
-   (missing original → Pending-Document with due date + automatic reminder)
+Draft → Submitted → (complete? 3 quotations attached?) → Under-Approval
+  → approvers needed depend on amount → Approved → PO-Issued → Delivered → Paid → Closed
+  (incomplete → Returned-for-Info · rejected → Rejected · problem → On-Hold)
 ```
 
 | Item | Design |
 |---|---|
-| **Inputs** | Application number; document type; scanned file (PDF/JPG); "original available?" yes/no; expected date if not |
-| **Statuses** | Not-Started → Uploaded → Pre-Verified / Needs-Correction → Original-Verified → Complete; plus Pending-Document, Escalated |
-| **Owner** | Admissions office in-charge (one named role) |
-| **Approval boundaries** | Desk staff can verify standard documents. **Admissions head** approves undertakings, due-date extensions and name/DOB mismatches |
-| **Fallback** | If the form or portal is down, use the paper checklist at the desk and upload the scans later. If the admissions head is absent, a deputy approves |
-| **Privacy** | Scans are visible only to the student and admissions staff, and deleted after verification (except what the rules require keeping) |
+| **Inputs** | Department; item and configuration; quantity; reason (linked to department activity); budget head; 3 vendor quotations (price, service/warranty, configuration); total amount |
+| **Statuses** | Draft, Submitted, Returned-for-Info, Under-Approval (shows which level), Approved, Rejected, PO-Issued, Delivered, Paid, Closed, On-Hold |
+| **Accountable owner** | Purchase/Accounts officer: one named role that owns every request from Submitted to Closed |
+| **Approval limits** (example values [A]) | Up to ₹50,000: HOD + Dean · ₹50,000–₹5 lakh: + Director · ₹5–25 lakh: + VC · Above ₹25 lakh: + Governing Body (financial authority) |
+| **Fallback** | System down: paper file on the same form, entered later. Approver away for more than 3 days: a delegated approver at the same level. Vendor fails: the next-best quotation is used |
+| **Controls** | Nobody approves above their limit; the system blocks it. Accounts audits small purchases every month |
 
-Free tools would be enough for a first version: Google Form + Google Sheet for statuses + an email reminder add-on.
+Free tools would be enough for a first version: Google Form + Google Sheet for statuses + email notifications.
 
 ## 5. Tests
-Five synthetic cases: [test-cases.md](test-cases.md). All five are handled by the design.
+Five synthetic cases: [test-cases.md](test-cases.md).
 
 ## 6. Time saved
-Net time saved ≈ **1,487 hours per intake**, but **most of it is student time**. Staff save only about **17 hours**, because they take on new review and support work. See [time-saved.md](time-saved.md).
+Net saving ≈ **510 staff hours per year**, after counting the new review, support and setup work. Small purchases should also arrive faster. See [time-saved.md](time-saved.md).
 
 ## 7. Limitations
-- I couldn't interview admissions staff before the deadline, so most of the current process and all the numbers are **assumptions or estimates**. Only my own joining experience is a fact.
-- Intake size and percentages are guesses and should be checked against office records (counts only, no personal data).
-- Uploading scans adds a privacy risk, which needs proper access control.
-- This is a design. It hasn't been built or tested with real users; the tests are synthetic.
+- The faculty member gave a **summary**. The exact step order, the approval amounts and all numbers are **assumptions or estimates** and should be confirmed with the Accounts office.
+- I didn't see real purchase files. That is correct, because they contain vendor prices and financial data.
+- The approval limits are example values. The real limits are set by IFHE's financial rules.
+- This is a design walk-through, not a working system. The tests are synthetic.

@@ -1,19 +1,22 @@
-# Evidence Log – Admission Document Verification
+# Evidence Log – Department Equipment Purchase
 
-**[F]** Fact · **[E]** Estimate · **[A]** Assumption. No names, IDs or marks are recorded.
+**[F]** Fact · **[E]** Estimate · **[A]** Assumption. No names, prices from real files, or financial records are included.
 
-| # | Date recorded | Source | What | Label |
+| # | Date | Source | What | Label |
 |---|---|---|---|---|
-| 1 | 2026-10-23 | My own joining (2023) | I submitted original certificates and photocopies at a verification desk when I joined | F |
-| 2 | 2026-10-23 | My own joining (2023) | The whole certificate checking took me about **3 hours** | F (my experience, from memory; one person only) |
-| 3 | 2026-10-23 | My own joining (2023) | Documents asked for: **10th memo, Inter memo, Transfer Certificate (TC), Aadhaar, photos** | F (from memory) |
-| 4 | 2026-10-23 | My reasoning | ~600 new B.Tech students per intake | E |
-| 5 | 2026-10-23 | My reasoning | ~30% of students have at least one pending or wrong document | E |
-| 6 | 2026-10-23 | My reasoning | The college keeps TC originals and gives a receipt | A |
-| 7 | 2026-10-23 | My reasoning | The admissions head approves undertakings for missing documents | A |
-| 8 | 2026-10-23 | Web search for IFHE's procedure | No public IFHE document describing this process was found | F |
+| 1 | 2026-10-23 | Faculty member (role only, shared with me for this assignment) | Purchases involve **budget and vendor**, comparing **price, service, configuration/quantity** | F |
+| 2 | 2026-10-23 | Same faculty member | **Equipment** is a main purchase type; purchases **depend on the department's activity** | F |
+| 3 | 2026-10-23 | Same faculty member | Hierarchy: **Governing Body (financial authority), Vice Chancellor, Director, HOD, Deans, management** | F |
+| 4 | 2026-10-23 | Same faculty member | The Governing Body is at the **head office, Panjagutta** | F |
+| 5 | 2026-10-23 | Same faculty member | **Accounts** and **admin** work are part of college operations (salary, ID cards, admin, accounts were also mentioned) | F |
+| 6 | 2026-10-23 | My reasoning | Requests move as a paper file, one office at a time | A |
+| 7 | 2026-10-23 | My reasoning | 3 vendor quotations are needed | A |
+| 8 | 2026-10-23 | My reasoning | ~200 purchase requests per year | E |
+| 9 | 2026-10-23 | My reasoning | ~30% are sent back for missing information | E |
+| 10 | 2026-10-23 | My reasoning | ~30 days from request to delivery | E |
 
-**Permission / declined:**
+**Permission:**
 | Date | Who (role) | Result |
 |---|---|---|
-| – | Admissions office | Not contacted before the deadline (limitation). My own experience needs no one else's permission |
+| 2026-10-23 | Faculty member | Shared the information for my assignment; name not recorded |
+| – | Accounts / purchase office | Not contacted before the deadline (limitation) |

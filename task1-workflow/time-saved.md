@@ -1,42 +1,39 @@
 # Net Time Saved
 
-All values are **estimates [E]**, per intake of new students. The only real data point is my own reporting-day time of about 3 hours (evidence log #2). I used it as the typical value, but it's from one person.
+All values are **estimates [E]**: staff effort per year, for the whole university.
 
 ## Inputs
 | Variable | Old | New |
 |---|---|---|
-| Students per intake (N) | 600 | 600 |
-| Student time on reporting day | 180 min (my own experience) | 30 min |
-| Student time uploading at home | – | 15 min |
-| Share needing an extra visit | 30% | 10% |
-| Extra visit time | 60 min | 60 min |
-| Staff time per student | 10 min | 5 (pre-check) + 3 (desk) = 8 min |
-| Staff time per extra visit | 10 min | 10 min |
+| Requests per year (N) | 200 | 200 |
+| Preparing the request | 120 min | 90 min (one standard form) |
+| Collecting 3 quotations | 180 min | 180 min (vendors still have to be contacted) |
+| Approvals (incl. moving the file) | 4 levels × 30 min = 120 min | Small (60% of requests): 2 levels × 10 min · Large (40%): 4 × 10 min → average 28 min |
+| Accounts processing | 60 min | 45 min |
+| Sent back for missing info | 30% × 120 min | 10% × 60 min (checked at submission) |
 
-## Per student
+## Per request
 ```
-Old student = 180 + 0.30×60       = 198 min      Old staff = 10 + 0.30×10 = 13 min   → 211 min
-New student = 15 + 30 + 0.10×60   =  51 min      New staff =  8 + 0.10×10 =  9 min   →  60 min
-Gross saved per student = 211 − 60 = 151 min
-```
-
-## Total, including review and support effort
-```
-Gross saved      = 600 × 151                  = 90,600 min
-Review effort    = 5% mismatches × 600 × 10   =   −300 min   (admissions head)
-Support effort   = 10% need help × 600 × 10   =   −600 min   (helpdesk / calls)
-Setup effort     = form + sheet, one time     =   −480 min   (8 hours)
-Net saved                                     = 89,220 min ≈ 1,487 hours per intake
+Old = 120 + 180 + 120 + 60 + 0.30×120 = 516 min
+New =  90 + 180 +  28 + 45 + 0.10×60  = 349 min
+Saved per request = 167 min
 ```
 
-## Who actually saves time?
+## Per year, including review and support effort
 ```
-Staff old = 600 × 13 = 7,800 min
-Staff new = 600 × 9 + 300 + 600 + 480 = 6,780 min
-Staff saving = 1,020 min ≈ 17 hours
+Gross saved     = 200 × 167                    = 33,400 min
+Review effort   = monthly audit, 12 × 120 min  = −1,440 min  (Accounts checks small purchases)
+Support effort  = 10% need help × 200 × 20 min =   −400 min
+Setup effort    = form + sheet + training      =   −960 min  (16 hours, one time)
+Net saved                                      = 30,600 min ≈ 510 staff hours per year
 ```
-**Most of the benefit goes to students (about 1,470 hours). Staff save only about 17 hours**, because the review, support and setup work falls on them. That's important: the office may not see much benefit unless queue complaints matter to them.
 
-## Low scenario (in case my 3 hours was unusually long)
-300 students, 60 min old reporting-day time: old = (60 + 18) + 13 = 91 min, new = 60 min, saved 31 min each.
-`300 × 31 − (150 + 300 + 480) = 8,370 min ≈ 140 hours`. Even in the low case, time is still saved.
+**Also faster:** small purchases skip 2 approval levels, so the time from request to delivery should drop for about 60% of requests. I haven't put a number on this because I have no data.
+
+## Low scenario
+100 requests, 15% sent back now, 5% after:
+```
+Old = 480 + 0.15×120 = 498 min,  New = 343 + 0.05×60 = 346 min,  Saved = 152 min
+100 × 152 − (1,440 + 200 + 960) = 12,600 min ≈ 210 hours per year
+```
+Even the low case saves time, mainly because the review and setup effort is fixed.

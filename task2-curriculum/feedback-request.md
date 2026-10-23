@@ -12,7 +12,7 @@
 > 2. Which subjects are most important for job readiness, and which could be shortened?
 > 3. Is the current order of subjects right? Are any prerequisites missing or too late?
 > 4. Do our labs and projects test practical skills enough (e.g., Git, testing, deployment)?
-> 5. Would a capstone where students build a digital workflow for checking admission documents before joining day be useful and practical?
+> 5. Would a capstone where students build a digital equipment purchase approval workflow be useful and practical?
 >
 > Thank you for your time.
 

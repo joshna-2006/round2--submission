@@ -12,7 +12,8 @@
 > 2. Which subjects are most important for job readiness, and which could be shortened?
 > 3. Is the current order of subjects right? Are any prerequisites missing or too late?
 > 4. Do our labs and projects test practical skills enough (e.g., Git, testing, deployment)?
-> 5. Would a capstone where students build a digital equipment purchase approval workflow be useful and practical?
+> 5. Would it be practical to offer a Special Project (SP301) where students build and test a digital ID card replacement workflow?
+> 6. I propose adding a 3-credit Software Testing & DevOps Lab in Sem V, taking 1 credit each from Physics, Engineering Graphics and Basic Electronics. Is that feasible, or would you take the credits from somewhere else?
 >
 > Thank you for your time.
 

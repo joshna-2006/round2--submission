@@ -1,272 +1,216 @@
 # Task 2 – Curriculum Audit and Redesign
 
-**Programme:** B.Tech Computer Science and Engineering (Artificial Intelligence), ICFAI Foundation for Higher Education (IFHE), Hyderabad
-**Admission batch:** 2023–2027  **Curriculum version:** ⚠️ not verified
-**Target roles:** Data Analyst (DA), AI Engineer (AI), Full Stack Developer (FS)
+**Programme:** B.Tech Computer Science & Engineering (Artificial Intelligence), IFHE Hyderabad · **Batch:** 2023–2027 · **Target roles:** Data Analyst (DA), AI Engineer (AI), Full Stack Developer (FS)
 
-> This is a **student proposal**. It is not an official syllabus revision. Labels used throughout: **[Verified]** = confirmed from an official document; **[Screenshot]** = transcribed from my syllabus screenshots; **[Unverified]** = not confirmed; **[Recommendation]** = my proposal.
+> Student proposal, not an official syllabus revision. Labels: **[Official]** = IFHE program-structure page · **[Screenshot]** = my own semester screenshots · **[Unverified]** · **[Proposal]**.
 
 ---
 
-## A. Source verification and what is missing
+## A. Sources and what they verify
 
-| What | Status | Source |
+| Source | What it verifies | Limits |
 |---|---|---|
-| Programme name "B.Tech CSE (Artificial Intelligence)" | **[Verified]** It appears as a programme in the official course handout | DS401 Human Computer Interaction course handout, IFHE (S1 in [source register](../sources/source-register.md)) |
-| Course list and credits, Sem I–VII | **[Screenshot]** | My syllabus screenshots (S2) |
-| Semester VIII | Internship. Code and credits **[Unverified]** | Told to me by my batch; no document seen |
-| Total programme credits | **[Unverified]**. Sem I–VII + Summer = 151, plus the Sem VIII internship | Calculated from S2 |
-| Curriculum version / regulation code | **Missing** | – |
-| Academic regulations (graduation rules, electives, prerequisites, credit-change rules) | **Missing**. Not available publicly online; I searched on 2026-10-23 | – |
-| Unit-level syllabus | Only **DS401 HCI** is available | S1 |
+| **S1 IFHE program-structure page** (ifheindia.org, accessed 2026-10-23) [Official] | The CSE (AI) programme exists; course titles and L-T-P-C credits for Sem I–VI; summer internship 5 credits; **Sem VIII Internship IP401 = 15 credits**; AI elective list | **No batch, year or version stated.** No total credits. Elective credit values not stated for some slots |
+| **S2 My screenshots** [Screenshot] | The courses and credits of **my** Sem I–VII | Not an official document |
+| **S3 DS401 handout** [Official] | Units of one course | One course only |
 
-**Documents I still need** (to make this fully verified):
-1. Official programme structure / curriculum PDF for the CSE (AI) 2023 batch, including Sem VIII
-2. IFHE academic regulations or student handbook
-3. Course handouts for CS206, CS205, DS304, DS305, CS307 and DS408
+### The two sources disagree
+I compared them course by course in [current-curriculum.csv](current-curriculum.csv):
 
-Because these are missing, every credit figure below is based on the screenshot data and is marked as such.
+| Result | Courses |
+|---|---|
+| Same course, same credits | **30 of 52** |
+| Same course, different semester | 6 (e.g. Chemistry Sem II vs I, Computer Vision Sem VII vs VI) |
+| **Different credits** | Physics **5 vs 4**, Industry Coding Practice **3 vs 4**, Summer internship **3 vs 5**, Deep Learning **3 vs 4** |
+| Not on the official page | ML201 (the page has **BS105 Probability & Statistics** instead), Pattern Recognition, and my 5 Sem VII courses (the page lists "Electives PE/OE (5)", so these are probably my electives) |
+| Course codes | All different (my CS101 = their ES105, etc.) |
+
+**My interpretation [Unverified]:** the web page is probably a **newer curriculum version** than the one my 2023 batch follows. So I use **my screenshots as the baseline**, because they are my actual courses, and take **only Sem VIII (IP401, 15 credits)** from the official page, since my screenshots don't include it. Where the newer official version already changed something, I use that as **evidence of the college's own direction**.
+
+**Still missing:** the regulations/handbook (graduation and credit-change rules) and the curriculum version code for my batch.
 
 ---
 
-## B. Version 1 – Current curriculum (credit map)
+## B. Version 1 – Current curriculum
 
-Full data: [current-curriculum.csv](current-curriculum.csv). All rows are **[Screenshot]**. Required/elective status and prerequisites are **[Unverified]** because the regulations were not available.
+| Sem | Credits | Source |
+|---|---:|---|
+| I | 20 | Screenshot |
+| II | 24 | Screenshot |
+| III | 24 | Screenshot |
+| IV | 24 | Screenshot |
+| Summer II | 3 | Screenshot (official page says 5) |
+| V | 21 | Screenshot |
+| VI | 19 | Screenshot |
+| VII | 16 | Screenshot (5 electives) |
+| VIII | 15 | Official page (IP401 Internship) |
+| **Total** | **166** | 151 from screenshots + 15 |
 
-| Semester | Courses (credits) | Total |
-|---|---|---:|
-| I | CS101 Computer Programming (4), MT102 Engineering Graphics (3), EG101 English Language Skills (3), CH102 Environmental Sciences (2), HS101 Essence of Indian Traditional Knowledge (0), MA101 Linear Algebra & ODE (3), PHY101 Physics (5) | 20 |
-| II | EC101 Basic Electronics (4), CH101 Chemistry (4), CS102 Data Structures (4), MT101 Digital Fabrication (3), MA102 Higher Calculus (3), DS101 Intro to AI & DS (3), EG102 Professional Communication (3) | 24 |
-| III | DS201 Artificial Intelligence (3), CS206 DBMS (4), MA202 Discrete Mathematics (3), EC201 Intro to IoT (3), ML201 Math Essentials for ML (3), CS201 OOP Concepts (4), CR201 Power Skills-I (1), HS201 Dynamics of Social Change (3) | 24 |
-| IV | CS204 Computer Organization & Architecture (3), CS203 Design & Analysis of Algorithms (3), MG201 Engineering Economics & Management (3), DS202 Industry Coding Practice (Python/R) (3), CS302 Operating Systems (4), CR202 Power Skills-II (1), DS301 Soft Computing (3), CS205 Web-Enabled Technologies (4) | 24 |
-| Summer II | IP201 Internship-I (3) | 3 |
-| V | DS303 Blockchain Technology (3), CS306 Computer Networks (4), HS301 Constitution of India (0), DS305 Data Wrangling & Visualization (3), CS415 Ethical Hacking (3), DS304 Machine Learning (4), CR301 Power Skills-III (1), DS310 Predictive Analytics (3) | 21 |
-| VI | DS307 Big Data Systems (3), DS306 Deep Learning (3), EC308 Embedded Systems (3), CR302 Power Skills-IV (1), SP301 Special Project (3), DS311 NLP (3), DS309 Pattern Recognition (3) | 19 |
-| VII | CS305 Computer Vision (3), CS307 Cloud Computing (4), CS413 Quantum Computing (3), DS408 Generative AI (3), HS206 Professional Ethics (3) | 16 |
-| VIII | Internship (credits unverified) | ? |
-| **Total (I–VII + Summer)** | | **151** |
-
-**Note:** the DS401 HCI handout lists CSE (AI) in its CO-PO mapping, but DS401 is not in my Sem I–VII screenshots. It may be an elective or from another semester. **[Unverified]**
+The full course list is in [current-curriculum.csv](current-curriculum.csv). Required vs. elective status is **[Unverified]**, apart from what the official page shows.
 
 ---
 
 ## C. Job-role alignment
 
-Job descriptions: see [job-description-analysis.md](job-description-analysis.md) (JD-1 Portcast Data Analyst Intern, 2026-08-07; JD-2 Keywords Studios AI Engineer Fresher, 2026-06-15; JD-3 Kulfi Software Engineer I Full-Stack, ~2026-10-19; JD-4 recruiter ML Engineer CV JD, undated). **Four postings are a sample, not the whole job market.**
+The job descriptions are in [job-description-analysis.md](job-description-analysis.md): JD-1 Portcast Data Analyst Intern (2026-08-07), JD-2 Keywords Studios AI Engineer Fresher (2026-06-15, partly verified), JD-3 Kulfi Software Engineer I Full-Stack (~2026-10-19), JD-4 recruiter's ML Engineer (CV) JD (undated). **Four postings are a sample, not the job market.**
 
-**Important honesty note:** apart from DS401, I could not see syllabus units. So the ratings below are based on course **titles**, and I mark them as **Partial (title-only)** or **Unverified** unless the title is unambiguous. I can't yet tell whether a skill is only *introduced*, *practised* in labs, or *assessed* in practical work. That needs the course handouts.
+**How to read the ratings:** without unit-level handouts I can't tell whether a skill is only *introduced*, *practised* in a lab, or *assessed*. The one handout I have (DS401) showed that a modern-sounding title can be theory-only ([units-analysis.md](units-analysis.md)). So every rating below is **title-based** unless marked otherwise. L-T-P from the official page is used as a hint: P > 0 means there is lab time.
 
-### C1. Data Analyst
-| Course | Sem / Cr | JD need supported | Rating | Reason | Gap |
-|---|---|---|---|---|---|
-| CS101, DS202 | I/4, IV/3 | Python (JD-1 R) | Partial (title-only) | DS202 explicitly says Python/R | Unknown whether scripting for data is practised |
-| CS206 DBMS | III/4 | SQL (JD-1 R) | Partial (title-only) | DBMS normally includes SQL | Analytical SQL (aggregations, window functions) not confirmed |
-| DS305 Data Wrangling & Viz | V/3 | Dashboards, reports (JD-1) | Partial (title-only) | Title matches directly | BI tool (Power BI/Tableau) not confirmed |
-| DS310 Predictive Analytics | V/3 | Data-driven decisions | Unverified | – | Business context and communication of results |
-| ML201, MA101 | III/3, I/3 | Statistics, attention to numbers | Weak | Maths for ML, not applied statistics | **No dedicated statistics course** |
-| DS307 Big Data | VI/3 | Not in JD-1 | Unverified | – | – |
-| EG101, EG102, MG201 | I, II, IV | Communication, business understanding (JD-1 R) | Partial | Communication courses exist | Data-storytelling not confirmed |
-| – | – | Validating AI output (JD-1 R) | **Weak** | No course found | **Gap** |
+| Need (from JDs) | DA | AI | FS | My courses | Lab time? (official L-T-P) | Rating |
+|---|---|---|---|---|---|---|
+| Python programming | R | R | P | CS101, DS202 | Yes (2-0-4, 2-1-2) | Strong |
+| SQL | R | – | P | CS206 DBMS | Yes (2-1-2) | Partial: analytical SQL unknown |
+| Data structures & algorithms | – | R | – | CS102, CS203 | CS102 yes | Strong |
+| Statistics for evaluation | detail | – | – | ML201 (maths for ML) | No (not on page) | **Weak**: no course titled statistics in my batch |
+| ML fundamentals | – | R | R | DS304, DS309 | Yes (3-0-2) | Strong |
+| NLP / LLM / RAG | – | R | – | DS311, DS408 | DS311 no (3-0-0) | Partial: RAG unknown |
+| REST APIs / backend | – | R | P | CS205 | Yes (2-1-2) | **Unverified**: official title says "WEB 3.0" |
+| Dashboards / reports | R | – | – | DS305 | Yes (2-0-2) | Partial: tool unknown |
+| Testing own code, code review | – | – | R | – | – | **Gap** |
+| Git / CI/CD / DevOps | – | – | P | maybe DS202 | – | **Gap** |
+| Cloud deployment | – | – | P | CS307 (elective) | Unknown | Partial |
+| Shipped multi-layer project | – | – | R | SP301, IP201 | Project | Partial: not required to be shipped or tested |
+| Validating AI output | R | – | P | – | – | **Gap** |
+| Communication | R | – | R | EG101, EG102, CR201–302 | – | Strong |
+| Computer vision | – | – | – | CS305 (JD-4 required) | No (3-0-0) | Partial |
 
-### C2. AI Engineer
-| Course | Sem / Cr | JD need supported | Rating | Reason | Gap |
-|---|---|---|---|---|---|
-| CS101, CS201 | I/4, III/4 | Python, OOP (JD-2 R) | Partial (title-only) | – | – |
-| CS102, CS203 | II/4, IV/3 | DSA (JD-2 R) | Strong (title-only) | Titles match exactly | – |
-| ML201, MA101, MA102 | I–III | ML maths | Partial | – | – |
-| DS201, DS304, DS309 | III, V, VI | ML fundamentals (JD-2 R) | Strong (title-only) | Dedicated ML course with 4 credits | – |
-| DS306, CS305 | VI, VII | Deep learning, CV (JD-4) | Partial (title-only) | – | PyTorch/OpenCV use not confirmed |
-| DS311 NLP | VI/3 | NLP pipelines (JD-2) | Partial (title-only) | – | – |
-| DS408 Generative AI | VII/3 | LLM features, RAG (JD-2) | Partial (title-only) | – | **RAG, LLM APIs and evaluation not confirmed** |
-| CS205 | IV/4 | APIs with FastAPI (JD-2) | Unverified | – | API development not confirmed |
-| CS307 Cloud | VII/4 | Deployment, DevOps (JD-4) | Partial (title-only) | – | Hands-on deployment not confirmed |
-| – | – | Git, testing, MLflow (JD-4) | **Weak** | No course found | **Gap** |
-
-### C3. Full Stack Developer
-| Course | Sem / Cr | JD need supported | Rating | Reason | Gap |
-|---|---|---|---|---|---|
-| CS101, CS201 | I, III | Backend language: Python/Java (JD-3 P) | Partial (title-only) | – | – |
-| CS102, CS203 | II, IV | Problem solving, debugging (JD-3 R) | Partial | – | – |
-| CS206 DBMS | III/4 | SQL (JD-3 P) | Partial (title-only) | – | – |
-| CS205 Web-Enabled Tech | IV/4 | Two layers: web + backend (JD-3 R), REST APIs (P) | Unverified | Only one web course in the programme | Modern framework and API work not confirmed |
-| CS306, CS302 | V, IV | Networking, OS | Partial | Foundations | – |
-| CS415 Ethical Hacking | V/3 | App security | Partial | – | – |
-| CS307 Cloud | VII/4 | Cloud deployment, CI/CD (JD-3 P) | Partial (title-only) | – | CI/CD not confirmed |
-| SP301, IP201 | VI, Summer | Shipped a real project (JD-3 R) | Partial | Project slots exist | Not required to be multi-layer or deployed |
-| – | – | Testing own work, code review (JD-3 R) | **Weak** | No course found | **Gap** |
+**Main finding:** the AI theory is well covered. The weakest area is **engineering practice** (testing, Git/CI, deployment, checking AI output), which appears in 3 of the 4 JDs.
 
 ---
 
 ## D. Five-unit analysis
-
-**Courses chosen:** I could only do a five-unit analysis for **DS401 Human Computer Interaction**, because it is the only course whose official unit structure I have. I chose not to invent units for other courses. The courses I would analyse next are CS205, CS206, DS305, DS408 and CS307, because they carry the most job-relevant skills (see section C). Their handouts are listed as missing in section A.
-
-**DS401 Human Computer Interaction – 3 credits (L3 T0 P0)** [Verified, S1]
-
-| Unit | Official topics (summary) | Roles | JD skill | Coverage | Evidence | Recommendation |
-|---|---|---|---|---|---|---|
-| I | HCI fundamentals; human cognition; input/output devices; VR/3D devices | FS | UX care (JD-3) | Strong for theory; outdated in places | Textbook T1 is Dix et al., 2004; covers "Paper: printing and scanning" | **UPDATE:** reduce older device content |
-| II | Models of interaction; ergonomics; interaction styles; WIMP | FS | UX (JD-3) | Strong for theory | Sessions 9–16 | **KEEP** |
-| III | Design process; scenarios; navigation and screen design; prototyping; usability heuristics | FS, DA (dashboard design) | Loading/empty/error states (JD-3) | Partial: no lab (P = 0) | L-T-P is 3-0-0, so no practical credits | **UPDATE:** add an assessed prototyping exercise (Figma or HTML) |
-| IV | Windowing systems; UI toolkits (Tkinter, JavaFX); evaluation techniques; cognitive models | FS | Testing own work (JD-3) | Partial; tools outdated | R1 lists Tkinter and JavaFX, not modern web frameworks | **UPDATE:** use web UI tooling and run a usability test |
-| V | Groupware; dialog design; AR/VR/mixed reality | AI (conversational) | Conversational AI (JD-2) | Partial | Dialog design is covered, but chatbots are not | **UPDATE:** add chatbot / AI-driven UX |
-
-**The college agrees:** the handout's own "Gaps in the syllabus" section lists "Add topics on Chatbots, Emotion-aware UI, AI-driven UX design" and "Add dedicated lectures on ethical design and accessibility laws (e.g., WCAG)". This supports reason R11.
-
-**Assessment:** 100% of DS401 marks come from assignments, a mid-term and an end-term exam [S1]. There is no project or lab component, so it doesn't test whether students can build and evaluate a real interface.
+See [units-analysis.md](units-analysis.md). It contains a full five-unit analysis of DS401 (the only handout I have), the five priority courses whose handouts I still need, and a template for each. **Not complete for the priority courses.**
 
 ---
 
 ## E. Version 2 – Proposed curriculum
 
-Full data: [proposed-curriculum.csv](proposed-curriculum.csv). Interactive view: [calculator/index.html](calculator/index.html).
+Full data: [proposed-curriculum.csv](proposed-curriculum.csv) · Interactive: [calculator/](calculator/)
 
-### Summary of changes
-| Action | Course | Current → Proposed credits | Reason |
+| Action | Course | Credits | Reason |
 |---|---|---|---|
-| UPDATE | DS202 Industry Coding Practice | 3 → 3 | R1 |
-| UPDATE | CS206 DBMS | 4 → 4 | R2 |
-| UPDATE | CS205 Web-Enabled Technologies | 4 → 4 | R3 |
-| UPDATE | DS305 Data Wrangling & Visualization | 3 → 3 | R5 |
-| UPDATE | DS310 Predictive Analytics | 3 → 3 | R6 |
-| UPDATE | CS307 Cloud Computing | 4 → 4 | R7 |
-| UPDATE | DS408 Generative AI | 3 → 3 | R8 |
-| REDUCE | PHY101 Physics | 5 → 3 | R9 |
-| REDUCE | CH101 Chemistry | 4 → 2 | R9 |
-| REDUCE | MT102 Engineering Graphics | 3 → 1 | R9 |
-| REDUCE | EC101 Basic Electronics | 4 → 3 | R9 |
-| REDUCE | MT101 Digital Fabrication | 3 → 2 | R9 |
-| ADD | NEW-ST1 Applied Statistics & Probability for Data Analysis (Sem II) | 0 → 3 | R4 |
-| ADD | NEW-SE1 Software Engineering & Testing Lab (Sem V) | 0 → 2 | R1 |
-| ADD | NEW-CP1 Capstone: Purchase Approval Workflow (Sem VII) | 0 → 3 | R10 |
-| KEEP | All other 39 courses | unchanged | – |
+| UPDATE | ML201 → add probability & statistics units | 3 → 3 | R4 |
+| UPDATE | CS206 DBMS: assessed analytical SQL lab | 4 → 4 | R2 |
+| UPDATE | DS202 Industry Coding Practice: Git, code review, unit tests | 3 → 3 | R1 |
+| UPDATE | CS205 Web-Enabled Tech: REST API + deployed two-layer project | 4 → 4 | R3 |
+| UPDATE | DS305 Data Wrangling & Viz: assessed dashboard | 3 → 3 | R5 |
+| UPDATE | DS310 Predictive Analytics: business cases + written recommendation | 3 → 3 | R6 |
+| UPDATE | DS304 Machine Learning: one end-to-end evaluated project | 4 → 4 | R9 |
+| UPDATE | SP301 Special Project: Task 1 workflow as a project option | 3 → 3 | R11 |
+| UPDATE | CS307 Cloud Computing: deployment lab | 4 → 4 | R7 |
+| UPDATE | DS408 Generative AI: RAG + AI-output verification | 3 → 3 | R8 |
+| REDUCE | PHY101 Physics | 5 → **4** | R10 (same as the official BS102) |
+| REDUCE | MT102 Engineering Graphics | 3 → 2 | R10 |
+| REDUCE | EC101 Basic Electronics | 4 → 3 | R10 |
+| ADD | **NEW-SE1 Software Testing & DevOps Lab** (Sem V) | 0 → 3 | R1 |
+| KEEP | all other 39 courses, including Sem VIII internship | unchanged | – |
 
-**Not removed on purpose:** Blockchain, Quantum Computing, Embedded Systems, IoT and the general-education courses are kept. They don't appear in my four JDs, but four JDs aren't enough reason to remove foundational or breadth courses.
+**What I chose not to do:** I don't remove Chemistry, Blockchain, Quantum Computing, Embedded Systems or the humanities courses just because the four JDs don't mention them. Four job ads aren't enough reason to remove foundations or breadth.
 
-### New courses [Recommendation – not official courses]
+### NEW-SE1 Software Testing & DevOps Lab [Proposal]
+- **Semester:** V · **Credits:** 3 (L1-T0-P4) · **Prerequisites:** CS201 OOP, DS202 Industry Coding Practice
+- **Objectives:** use Git branches and pull requests; write unit and integration tests; set up a CI pipeline that runs tests on every push; review a classmate's code; check AI-generated code with tests
+- **Why:** neither my curriculum nor the newer official one has a testing or DevOps course, yet JD-3 requires "tests their work" and JD-3/JD-4 mention CI/CD and DevOps. This repository's own GitHub Actions check is a small example of what students would build.
 
-**NEW-ST1 Applied Statistics & Probability for Data Analysis**: Sem II, 3 credits (2 lecture + 1 lab). Prerequisite: MA101.
-- Objectives: descriptive statistics; probability distributions; sampling; confidence intervals; hypothesis tests; correlation vs. causation; classification metrics (precision, recall, F1); doing all of this in Python.
-- Why: no statistics course exists, yet JD-4 requires "statistics relevant to deep learning … to assess model's performance", and analysts must spot wrong numbers (JD-1).
-
-**NEW-SE1 Software Engineering & Testing Lab**: Sem V, 2 credits (lab). Prerequisites: CS201, DS202.
-- Objectives: Git branching and pull requests; code review; unit and integration tests (pytest/JUnit); a simple CI pipeline (GitHub Actions); debugging; checking AI-generated code.
-- Why: JD-3 requires testing your own work, JD-3 and JD-4 mention CI/CD or DevOps, and no course title covers this.
-
-**NEW-CP1 Capstone: Purchase Approval Workflow**: Sem VII, 3 credits. See section I.
-
-### Three pathways (flexible, not all mandatory)
-
-All students take the **common CSE (AI) core**: all KEEP and UPDATE courses plus NEW-ST1 and NEW-SE1. The pathway is chosen through the **existing project slots** (SP301 Special Project, IP201 Internship, NEW-CP1 Capstone), so no extra credits are needed.
+### Three pathways (flexible, nothing extra is mandatory)
+Everyone takes the common core, i.e. every KEEP/UPDATE course plus NEW-SE1. The pathway is chosen through **choices that already exist**: Sem V–VII electives, the SP301 project topic, and the internship.
 
 | | Data Analyst | AI Engineer | Full Stack Developer |
 |---|---|---|---|
-| Key existing courses | CS206, DS305, DS310, DS307, MG201 | DS304, DS306, DS311, CS305, DS408 | CS205, CS206, CS306, CS415, CS307 |
-| Updated courses that matter most | CS206 (SQL lab), DS305 (dashboards), DS310 (business cases) | DS408 (RAG), CS307 (deployment), DS202 (testing) | CS205 (APIs and deployment), DS202, CS307 |
-| New content | NEW-ST1 Statistics | NEW-SE1 Testing Lab | NEW-SE1 Testing Lab |
-| SP301 project focus | Dashboard plus analysis report on a public dataset | Train and serve a model behind an API | Multi-layer web app with tests |
-| Capstone (NEW-CP1) role | Workflow metrics and time-saved dashboard | AI step, e.g. auto-checking requests for missing fields | Build the request portal and status tracking |
+| Core courses that matter most | CS206, DS305, DS310, DS307, ML201 | DS304, DS306, DS311, CS305, DS408 | CS205, CS206, CS306, CS415, NEW-SE1 |
+| Electives (from the official AI elective list) | Data Science specialization (AI421–425), e.g. AI425 Analytics Tools | AI Specialization (AI401–405), e.g. AI403 Responsible AI | Cloud Computing (CS307), plus NoSQL (AI406) |
+| SP301 project | Dashboard + analysis on a public dataset | Trained model served behind an API | Task 1 ID card workflow as a web app |
+| Missing content still needed | – | RAG (in DS408 update) | REST APIs (in CS205 update) |
 
 ---
 
-## F. Reasons for change (11)
+## F. Reasons for the redesign (11)
 
-| # | Issue observed | Course evidence | JD evidence | Change | Roles | Expected outcome | Trade-off |
+| # | Issue | Course evidence | Job evidence | Change | Roles | Outcome | Trade-off |
 |---|---|---|---|---|---|---|---|
-| R1 | No course teaches testing, Git or CI | No such title in Sem I–VII [Screenshot] | JD-3: "tests their work" (required); CI/CD (preferred). JD-4: DevOps practices | UPDATE DS202 + ADD NEW-SE1 | FS, AI, DA | Students ship tested code under version control | Needs lab time and staff trained in CI tools |
-| R2 | SQL practice level unknown | CS206 DBMS, 4 credits [Screenshot] | JD-1: Python and SQL required; JD-3: SQL preferred | UPDATE CS206: assessed analytical SQL lab | DA, FS | Can write join, aggregate and window queries | Less time for DB theory such as normal-form proofs |
-| R3 | Only one web course; API work unconfirmed | CS205, 4 credits [Screenshot] | JD-3: work across two layers (required), REST APIs (preferred); JD-2: FastAPI services | UPDATE CS205: REST API plus deployed mini-project | FS, AI | Builds a working frontend + API + DB | Framework choice will date; teach concepts first |
-| R4 | No statistics course | Only ML201/MA101 maths [Screenshot] | JD-4: statistics to assess model performance; JD-1: spot wrong numbers | ADD NEW-ST1 (3 cr) | DA, AI | Chooses and interprets the right metric | Uses credits taken from basic science (R9) |
-| R5 | BI tool not confirmed | DS305 [Screenshot] | JD-1: dashboards, reports | UPDATE DS305: dashboard project with free Power BI / Looker Studio | DA | Publishes a dashboard with a written insight | Licensing; use free tools |
-| R6 | Analytics without business context | DS310 [Screenshot] | JD-1: understand domain, product and customers | UPDATE DS310: case studies plus a stakeholder report | DA | Turns analysis into a recommendation | Finding real but shareable datasets |
-| R7 | Cloud may be theory-only | CS307, 4 credits [Screenshot] | JD-3: cloud deployment; JD-4: deployment and DevOps | UPDATE CS307: Docker plus free-tier deployment lab | AI, FS | Deploys and monitors an app | Free-tier limits; need a no-card alternative |
-| R8 | GenAI content unknown; no AI-output checking | DS408 [Screenshot] | JD-2: RAG, LLM features; JD-1: validate AI-generated output | UPDATE DS408: RAG lab plus output-validation exercise | AI, DA | Builds and evaluates a RAG app | API costs; use open models |
-| R9 | Basic science/engineering credits are high for an AI branch | PHY101 = 5 credits, the largest Sem I course; CH101 4; MT102 3 [Screenshot] | None of the 4 JDs mention them (this alone isn't a reason to remove them) | REDUCE 5 courses by 8 credits total; **none removed** | All (frees credits) | Core science kept; credits move to R1, R4, R10 | **Must satisfy basic-science credit rules (AICTE / IFHE)**, which are not verified |
-| R10 | Projects not required to be shipped or tested | SP301 3 cr, IP201 3 cr [Screenshot] | JD-3: "shipped at least one real project" (required); JD-4: end-to-end pipeline | ADD NEW-CP1 capstone + use SP301 for pathways | All | A tested, documented, demonstrable project | Supervision load on faculty |
-| R11 | HCI has no practical component and dated tools | DS401: L-T-P 3-0-0; Tkinter/JavaFX; the handout's own gap list [Verified, S1] | JD-3: UX, loading/error states | UPDATE DS401 content (no credit change, not counted) | FS | Prototypes and usability-tests a real UI | DS401 status in my programme is unverified |
+| R1 | No testing or CI | No such course in my screenshots **or** on the official page | JD-3: "tests their work" (required), CI/CD (preferred); JD-4: DevOps | UPDATE DS202 + ADD NEW-SE1 | FS, AI, DA | Ships tested code under version control | Needs lab time and staff who know CI |
+| R2 | SQL depth unknown | CS206, 4 cr, lab 2-1-2 [Official] | JD-1: "Python and SQL … write a query" | Assessed analytical SQL lab | DA, FS | Writes join/aggregate/window queries | Less time for DB theory |
+| R3 | Only one web course; title says "WEB 3.0" | AI208 title [Official] | JD-3: two layers (required), REST APIs (preferred); JD-2: FastAPI | REST API + deployed two-layer project | FS, AI | Builds frontend + API + DB | May reduce Web3 content |
+| R4 | No statistics course in my batch | ML201 in my Sem III; the newer official structure has **BS105 Probability & Statistics** in its place | JD-4: "statistics … to assess model's performance" | Add statistics units to ML201 | DA, AI | Chooses and interprets the right metric | ML201's maths content gets squeezed |
+| R5 | Dashboard tool not confirmed | DS305, lab 2-0-2 | JD-1: dashboards and reports | Assessed dashboard with a free BI tool | DA | Publishes a dashboard with an insight | Tool licences, so use free tools |
+| R6 | Analytics without business context | DS310, 3-0-0 (no lab) | JD-1: understand domain, product, customers | Case studies + written recommendation | DA | Turns analysis into a decision | Finding shareable data |
+| R7 | Deployment may be theory-only | CS307 (my elective) | JD-3: cloud deployment; JD-4: deployment, DevOps | Docker + free-tier deployment lab | AI, FS | Deploys and monitors an app | Free tiers change (see AI exercise 5) |
+| R8 | RAG unknown; no AI-output checking | DS408 (my elective) | JD-2: RAG, LLM features; JD-1: validate AI output | RAG lab + verification exercise | AI, DA | Builds and evaluates a RAG app | API costs, so use open models |
+| R9 | ML may stop at training | DS304, 3-0-2 | JD-4: end-to-end pipeline, statistics, MLflow | One end-to-end evaluated project | AI | Reports results with uncertainty | Bigger project load |
+| R10 | Small reallocation from basic science/engineering | Physics is 5 cr in my batch but **4 in the official newer version**; Graphics 3, Electronics 4 | Not in JDs (not a reason by itself) | Physics 5→4, Graphics 3→2, Electronics 4→3 | All | Frees 3 credits for R1 | **Must meet basic-science credit rules (unverified)**; Graphics and Electronics cuts are my judgement only |
+| R11 | Projects not required to be shipped and tested | SP301 0-0-6, 3 cr | JD-3: "shipped at least one real project" (required) | Task 1 workflow offered as an SP301 project | All | A tested, demoable project | Supervision load |
 
 ---
 
-## G. Credit calculation, sequencing and regulations
+## G. Credit calculation, sequencing and approvals
 
-**Definition of an affected credit:**
-- every credit of an UPDATE course (its content changes), **plus**
-- every credit moved from REDUCE courses into ADD courses, counted **once** (not once when removed and again when added).
+**Affected credit** = every credit of an UPDATE course, plus every credit moved from REDUCE to ADD, **counted once**. No course is counted twice. All numbers below are produced by [check_credits.py](check_credits.py).
 
-A course is never counted twice. R11 (DS401) is excluded because its programme status is unverified.
+| | With Sem VIII (main figure) | Sem I–VII only |
+|---|---:|---:|
+| Current total | 166 | 151 |
+| Updated (3+4+3+4+3+3+4+3+4+3) | 34 | 34 |
+| Reallocated: reduced 3, added 3 → counted once | 3 | 3 |
+| **Affected** | **37** | **37** |
+| **Affected %** | **22.3%** ✅ | **24.5%** ✅ |
+| Proposed total | 166, balanced ✅ | 151, balanced ✅ |
+| Retained unchanged | 129 | 114 |
 
-| Item | Credits |
-|---|---:|
-| Current total (Sem I–VII + Summer) [Screenshot] | 151 |
-| Credits updated (DS202 3 + CS206 4 + CS205 4 + DS305 3 + DS310 3 + CS307 4 + DS408 3) | 24 |
-| Credits reduced (2 + 2 + 2 + 1 + 1) | 8 |
-| Credits added (3 + 2 + 3) | 8 |
-| Reallocated (counted once) = max(8, 8) | 8 |
-| **Affected = 24 + 8** | **32** |
-| **Affected % = 32 ÷ 151** | **21.2%** ✅ (target 20–25%) |
-| Retained unchanged = 151 − 24 − 8 | 119 |
-| Proposed total | 151 ✅ balanced |
+The figure stays within 20–25% **whether or not** the Sem VIII credits are counted, so the uncertainty about Sem VIII doesn't change the conclusion.
 
-**Effect of Semester VIII:** if the internship carries *X* credits, affected % = 32 ÷ (151 + X). The proposal stays within 20–25% only if X ≤ 9; beyond that it falls below 20%. Once X is known, the fix is to update 1–2 more courses (e.g., DS304 or CS305).
+**Semester loads (current → proposed):** I 20→18, II 24→23, III–IV unchanged, V 21→24, VI–VIII unchanged. No semester goes above 24, the current maximum.
 
-**Semester loads (current → proposed):** I 20→16, II 24→23, III 24→24, IV 24→24, Summer 3→3, V 21→23, VI 19→19, VII 16→19. No semester goes above the current maximum of 24.
+**Prerequisites:**
+- NEW-SE1 (Sem V) comes after CS201 (III) and DS202 (IV), and before SP301 (VI), so Special Projects can require tests.
+- Statistics units in ML201 (III) come before DS304 ML (V).
+- The CS205 API work (IV) comes before CS307 deployment (VII).
 
-**Prerequisites and sequencing:**
-- NEW-ST1 (Sem II) needs MA101 (Sem I). It comes before DS304 ML (Sem V), so ML can rely on it.
-- NEW-SE1 (Sem V) needs CS201 (III) and DS202 (IV). It comes before SP301 (VI), so the Special Project can require tests.
-- NEW-CP1 (Sem VII) needs CS205, CS206 and NEW-SE1.
-- Reducing EC101 still leaves the base for EC201 IoT and EC308 Embedded Systems.
+**Approvals [Unverified]:** curriculum changes would normally go through the department Board of Studies and then the Academic Council. They would apply to a future batch, not mine. Reducing Physics must respect any minimum basic-science credits. The newer official structure already has Physics at 4, which suggests 4 is acceptable.
 
-**Approvals and regulatory conditions:**
-- Changes would need the department **Board of Studies** and then the **Academic Council** of IFHE. The exact process is [Unverified] because the regulations aren't available.
-- They could apply only to a **future batch**, not to the 2023 batch mid-programme.
-- Reducing Physics, Chemistry and Graphics must respect any **minimum basic-science / engineering-science credits** in IFHE's regulations or AICTE model curriculum guidance. This is [Unverified] and is the biggest risk in the proposal.
-- **If the credit changes aren't allowed:** apply R1–R8 as content and assessment updates within existing credits only (24 affected credits = 15.9%), and run NEW-SE1 as a non-credit workshop.
+**If credit changes aren't allowed:** apply only the 10 UPDATEs (34 credits = 20.5% of 166) and run NEW-SE1 as a non-credit workshop.
 
 ---
 
 ## H. AI-assisted exercises
-See [ai-exercises.md](ai-exercises.md): five subjects (CS201, CS203, CS206, DS304, CS307), each with prompt, model, date, output, independent verification and result.
+[ai-exercises.md](ai-exercises.md): five subjects (CS201, CS203, CS206, DS304, CS307). Exercises 1–4 are checked automatically by [ai-outputs/verify.py](ai-outputs/verify.py) (9 of 9 checks pass). Exercise 5 was checked against official AWS pages, and the AI's answer was **partly outdated**.
 
 ---
 
-## I. Capstone: Purchase Approval Workflow (from Task 1)
-
-Based on [Task 1](../task1-workflow/report.md). The Task 1 figures are estimates, so the capstone's first job is to measure them properly.
+## I. Capstone / lab from Task 1: ID Card Replacement System (SP301 option)
 
 | Item | Proposal |
 |---|---|
-| Problem | Department equipment purchases move as a paper file through HOD → Dean → Director → VC → Governing Body, with no status visibility and late discovery of missing quotations (Task 1; hierarchy told to me by faculty, the rest assumptions and estimates) |
-| Learning objectives | 1) Model a real process as states and transitions. 2) Build a validated multi-layer app (request form → API → DB). 3) Enforce role-based, amount-based approval limits. 4) Write tests for normal and failure cases. 5) Measure time saved and reliability |
-| Prerequisites | CS205, CS206, NEW-SE1 (CS201 recommended) |
-| Scope / inputs | Synthetic requests only: department, item/configuration, quantity, reason, budget head, 3 quotations, amount. **No real vendor or financial data** |
-| Workflow | Draft → Submitted → Under-Approval → Approved → PO-Issued → Delivered → Paid → Closed; also Returned-for-Info, Rejected, On-Hold |
-| Owner / approval limits | Purchase/Accounts officer owns the process; approvers act only within their amount limit; above ₹25 lakh goes to the Governing Body (example limits) |
-| Fallback | Paper file on the same form if the system is down; delegated approver after 3 days' absence; next-best vendor if delivery fails |
-| Test cases | The same 5 as Task 1 [test-cases.md](../task1-workflow/test-cases.md): normal, missing quotation, duplicate request, approval above the limit, vendor delivery failure |
-| Measurements | Median days from request to delivery; % of requests returned for info; % of tests passing; net time saved = gross − review − support − setup effort |
-| Rubric | Process model 20%, working app 25%, tests and failure handling 25%, metrics and report 20%, demo 10% |
-| Pathways | FS: request portal and API. AI: auto-check quotations for missing fields. DA: spending and delay dashboard |
-| Credits | 3. Comparable to SP301 Special Project (3 credits) for one semester of team project work |
+| Problem | Replacing a lost/damaged ID card may need several visits with no status visibility. This is hypothesis H1 from [Task 1](../task1-workflow/README.md), not yet confirmed |
+| Learning objectives | 1) Model a process as states and transitions. 2) Build a validated multi-layer app. 3) Enforce role-based permissions and an approval boundary. 4) Write automated tests for normal and failure cases. 5) Measure time saved with real data |
+| Prerequisites | CS205, CS206, NEW-SE1 |
+| Inputs / scope | Synthetic students only: reason, photo attached, declaration, charge cleared. No real student data |
+| Workflow | SUBMITTED → NEEDS_INFO → VERIFIED → (ESCALATED) → APPROVED → PRINT_FAILED/READY → COLLECTED; REJECTED |
+| Owner / approvals | Admin officer owns the process; admin head approves 3rd+ replacements (illustrative boundary) |
+| Fallback | Temporary pass on printer failure; manual card after a 2nd failure; paper form if the system is down |
+| Test cases | The 5 required cases, already automated in [task1-workflow/prototype/](../task1-workflow/prototype/). Students extend them |
+| Measurements | Visits per request, days to card, % needing info, tests passing, net time saved via `savings.py` |
+| Rubric | Process model 20% · working app 25% · tests and failure handling 25% · measured evaluation 20% · demo 10% |
+| Pathways | FS: web app + API · AI: auto-check the uploaded photo for quality · DA: dashboard of request times |
+| Credits | Uses SP301's existing 3 credits (0-0-6), so no new credits are needed |
 
 ---
 
-## J. Faculty / graduate feedback and limitations
+## J. Feedback and limitations
 
-Feedback request message and record: [feedback-request.md](feedback-request.md). No faculty or graduate feedback was received before the submission deadline. The redesign is therefore based only on the documented sources and my own analysis, and hasn't been checked by faculty.
+**Feedback:** a request message is ready in [feedback-request.md](feedback-request.md). **No curriculum feedback had been received when this was written.** A faculty member did share information about college administration, which I used for Task 1, but that isn't feedback on this redesign.
 
 **Limitations:**
-1. Course list and credits come from screenshots, not the official curriculum PDF. The curriculum version and regulations were not available.
-2. Semester VIII credits are unknown, so the programme total and the affected % may change.
-3. Only one course (DS401) has official unit-level evidence. All other alignment ratings are based on course titles.
-4. Four job descriptions are a small sample. JD-1 is an internship, JD-2's details came from a listing copy I couldn't open directly, and JD-4 is undated.
-5. The regulatory limits on reducing basic-science credits are unverified.
-6. This is a student proposal. It has not been reviewed or approved by IFHE.
+1. My course list comes from screenshots. The only official structure I found states no batch or version, and 22 of 52 courses differ from it.
+2. Regulations (graduation rules, credit-change rules) were not available.
+3. Only one handout (DS401) gives units. The priority courses are rated from titles and L-T-P only.
+4. JD-2 is only partly verified, and JD-4 is undated. Four JDs are a sample.
+5. The R10 reductions for Graphics and Electronics are my judgement, without official support.
+6. This is a student proposal. IFHE has not reviewed or approved it.
 
 ---
 
 ## K. Interactive tool
-[calculator/index.html](calculator/index.html): role, semester and action filters; current vs. proposed comparison; rationale per course; affected-credit and balance calculation; input validation. Tests T1–T4 pass. See [calculator/README.md](calculator/README.md).
+[calculator/](calculator/): filters, current vs. proposed comparison, rationale, comparison with the official page, a Sem VIII toggle and live checks. 5 browser tests passed; the same totals come from `check_credits.py`.
 
 ## L. Sources
 [../sources/source-register.md](../sources/source-register.md)

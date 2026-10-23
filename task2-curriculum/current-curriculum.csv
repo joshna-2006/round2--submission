@@ -1,53 +1,53 @@
-semester,code,course,credits,category,action,new_credits,reason
-1,CS101,Computer Programming,4,,KEEP,4,
-1,MT102,Engineering Graphics,3,,KEEP,3,
-1,EG101,English Language Skills,3,,KEEP,3,
-1,CH102,Environmental Sciences,2,,KEEP,2,
-1,HS101,Essence of Indian Traditional Knowledge,0,,KEEP,0,
-1,MA101,Linear Algebra and Ordinary Differential Equations,3,,KEEP,3,
-1,PHY101,Physics,5,,KEEP,5,
-2,EC101,Basic Electronics,4,,KEEP,4,
-2,CH101,Chemistry,4,,KEEP,4,
-2,CS102,Data Structures,4,,KEEP,4,
-2,MT101,Digital Fabrication,3,,KEEP,3,
-2,MA102,Higher Calculus,3,,KEEP,3,
-2,DS101,Introduction to AI and DS,3,,KEEP,3,
-2,EG102,Professional Communication,3,,KEEP,3,
-3,DS201,Artificial Intelligence,3,,KEEP,3,
-3,CS206,Database Management Systems,4,,KEEP,4,
-3,MA202,Discrete Mathematics,3,,KEEP,3,
-3,EC201,Introduction to IoT,3,,KEEP,3,
-3,ML201,Mathematical Essentials for Machine Learning,3,,KEEP,3,
-3,CS201,Object Oriented Programming Concepts,4,,KEEP,4,
-3,CR201,Power Skills-I,1,,KEEP,1,
-3,HS201,Dynamics of Social Change,3,,KEEP,3,
-4,CS204,Computer Organization and Architecture,3,,KEEP,3,
-4,CS203,Design and Analysis of Algorithms,3,,KEEP,3,
-4,MG201,Engineering Economics and Management,3,,KEEP,3,
-4,DS202,Industry Coding Practice (Python/R),3,,KEEP,3,
-4,CS302,Operating Systems,4,,KEEP,4,
-4,CR202,Power Skills-II,1,,KEEP,1,
-4,DS301,Soft Computing,3,,KEEP,3,
-4,CS205,Web-Enabled Technologies,4,,KEEP,4,
-Summer-II,IP201,Internship-I,3,,KEEP,3,
-5,DS303,Blockchain Technology,3,,KEEP,3,
-5,CS306,Computer Networks,4,,KEEP,4,
-5,HS301,Constitution of India,0,,KEEP,0,
-5,DS305,Data Wrangling and Visualization,3,,KEEP,3,
-5,CS415,Ethical Hacking,3,,KEEP,3,
-5,DS304,Machine Learning,4,,KEEP,4,
-5,CR301,Power Skills-III,1,,KEEP,1,
-5,DS310,Predictive Analytics,3,,KEEP,3,
-6,DS307,Big Data Systems,3,,KEEP,3,
-6,DS306,Deep Learning,3,,KEEP,3,
-6,EC308,Embedded Systems,3,,KEEP,3,
-6,CR302,Power Skills-IV,1,,KEEP,1,
-6,SP301,Special Project,3,,KEEP,3,
-6,DS311,Natural Language Processing,3,,KEEP,3,
-6,DS309,Pattern Recognition,3,,KEEP,3,
-7,CS305,Computer Vision,3,,KEEP,3,
-7,CS307,Cloud Computing,4,,KEEP,4,
-7,CS413,Quantum Computing,3,,KEEP,3,
-7,DS408,Generative AI,3,,KEEP,3,
-7,HS206,Professional Ethics,3,,KEEP,3,
-8,UNVERIFIED,Internship (Semester VIII) - code and credits not yet verified,0,,KEEP,0,
+semester,code,course,credits,official_code,official_semester,official_credits,comparison
+1,CS101,Computer Programming,4,ES105,1,4,match
+1,MT102,Engineering Graphics,3,ES101,1,3,match
+1,EG101,English Language Skills,3,EG101,1,3,match
+1,CH102,Environmental Sciences,2,ES103,2,2,semester differs
+1,HS101,Essence of Indian Traditional Knowledge,0,HS101,1,0,title differs (official: Understanding India)
+1,MA101,Linear Algebra and Ordinary Differential Equations,3,BS103,1,3,match
+1,PHY101,Physics,5,BS102,1,4,credits differ
+2,EC101,Basic Electronics,4,ES104,2,4,match
+2,CH101,Chemistry,4,BS101,1,4,semester differs
+2,CS102,Data Structures,4,ES106,2,4,match
+2,MT101,Digital Fabrication,3,ES102,2,3,match
+2,MA102,Higher Calculus,3,BS104,2,3,match
+2,DS101,Introduction to AI and DS,3,ES107,2,3,match
+2,EG102,Professional Communication,3,EG102,2,3,match
+3,DS201,Artificial Intelligence,3,AI203,3,3,match
+3,CS206,Database Management Systems,4,AI202,3,4,match
+3,MA202,Discrete Mathematics,3,AI207,4,3,semester differs
+3,EC201,Introduction to IoT,3,AI201,3,3,match
+3,ML201,Mathematical Essentials for Machine Learning,3,,,,not on official page (official Sem III has BS105 Probability & Statistics instead)
+3,CS201,Object Oriented Programming Concepts,4,ES201,3,4,match
+3,CR201,Power Skills-I,1,CR201,3,1,match
+3,HS201,Dynamics of Social Change,3,HSXX,4,3,probably fills the Digital Humanities Elective slot
+4,CS204,Computer Organization and Architecture,3,AI206,4,3,match
+4,CS203,Design and Analysis of Algorithms,3,AI204,3,3,semester differs
+4,MG201,Engineering Economics and Management,3,MG201,3,3,semester differs
+4,DS202,Industry Coding Practice (Python/R),3,ES202,4,4,credits differ
+4,CS302,Operating Systems,4,AI205,4,4,match
+4,CR202,Power Skills-II,1,CR202,4,1,match
+4,DS301,Soft Computing,3,AI211,4,3,match
+4,CS205,Web-Enabled Technologies,4,AI208,4,4,match (official title: Web Enabled Technologies (WEB 3.0))
+Summer-II,IP201,Internship-I,3,IP201,Summer,5,credits differ
+5,DS303,Blockchain Technology,3,AI303,5,3,match
+5,CS306,Computer Networks,4,AI302,5,4,match
+5,HS301,Constitution of India,0,HS301,5,0,match
+5,DS305,Data Wrangling and Visualization,3,AI305,5,3,match
+5,CS415,Ethical Hacking,3,XXXX,5,3,probably fills the Elective-I slot
+5,DS304,Machine Learning,4,AI304,5,4,match
+5,CR301,Power Skills-III,1,CR301,5,1,match
+5,DS310,Predictive Analytics,3,AI301,5,3,match
+6,DS307,Big Data Systems,3,AI308,6,3,match
+6,DS306,Deep Learning,3,AI310,6,4,credits differ
+6,EC308,Embedded Systems,3,DSXX,6,3,probably fills the Elective-II slot
+6,CR302,Power Skills-IV,1,CR302,6,1,match
+6,SP301,Special Project,3,SP301,6,3,match
+6,DS311,Natural Language Processing,3,AI306,6,3,match
+6,DS309,Pattern Recognition,3,,,,not on official page (may be a professional elective)
+7,CS305,Computer Vision,3,AI307,6,3,semester differs
+7,CS307,Cloud Computing,4,,,,not on official page (Sem VII lists Electives PE/OE (5))
+7,CS413,Quantum Computing,3,,,,not on official page (Sem VII lists Electives PE/OE (5))
+7,DS408,Generative AI,3,,,,not on official page (Sem VII lists Electives PE/OE (5))
+7,HS206,Professional Ethics,3,,,,not on official page (Sem VII lists Electives PE/OE (5))
+8,IP401,Internship Program / Research,15,IP401,8,15,from official page only (my Sem VIII is the internship; not in my screenshots)

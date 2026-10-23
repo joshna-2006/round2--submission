@@ -6,6 +6,13 @@ Three real postings, one per target role, plus the recruiter's own JD as a fourt
 
 Access date for all research below: **2026-10-23**.
 
+| JD | How it was verified on 2026-10-23 | Still to do by me |
+|---|---|---|
+| JD-1 Portcast | Page loaded and was live; posting date from Lever's own data (`createdAt` = 2026-08-07) | Screenshot |
+| JD-2 Keywords Studios | **Partly:** title, company, location and date came from a copy of the listing; the original page wouldn't load for me | **Open the link, confirm it, screenshot it.** If it's gone, replace it |
+| JD-3 Kulfi | LinkedIn page loaded: "4 days ago", entry level, 0–1 years | Screenshot |
+| JD-4 Recruiter JD | Received directly; undated | – |
+
 ---
 
 ## JD-1: Data Analyst Intern – Portcast
@@ -102,9 +109,9 @@ Legend: **R** = required, **P** = preferred. Coverage is based on **course title
 | NLP / LLM / RAG | – | R | – | – | DS311 NLP, DS408 Generative AI | Partial: RAG and LLM APIs not confirmed |
 | API development (REST/FastAPI) | – | R | P | – | CS205 Web-Enabled Technologies | ⚠️ Unknown whether APIs are taught |
 | Dashboards / reports | R | – | – | – | DS305 Data Wrangling & Visualization | Partial: tool (Power BI/Tableau) unknown |
-| Statistics for evaluation | P (detail) | – | – | R | ML201, DS310 | ⚠️ No dedicated statistics course in the list |
-| Testing your own code | – | – | R | – | **None found** | **Gap** |
-| Git / version control / CI/CD | – | – | P | R | **None found** | **Gap** |
+| Statistics for evaluation | P (detail) | – | – | R | ML201 (my batch); the official page has BS105 Probability & Statistics instead | ⚠️ My batch has no course titled statistics; the newer official structure does |
+| Testing your own code | – | – | R | – | **None found** in my screenshots or on the official page | **Gap** |
+| Git / version control / CI/CD | – | – | P | R | Possibly DS202 / ES202 Industry Coding Practice (unverified); no dedicated course | **Gap** |
 | Cloud deployment | – | (deploy) | P | R | CS307 Cloud Computing | Partial: hands-on deployment unknown |
 | Shipped a real multi-layer project | – | – | R | R | SP301 Special Project, IP201 Internship | Partial: not necessarily full-stack |
 | Validating AI output | R | – | P | – | **None found** | **Gap** |
@@ -114,5 +121,5 @@ Legend: **R** = required, **P** = preferred. Coverage is based on **course title
 ### What the matrix shows
 1. **Theory courses match the job titles well.** Python, ML, NLP, DBMS and CV all have matching courses.
 2. **Engineering practice is the biggest gap.** Git, testing, CI/CD and validating AI output appear in 3 of 4 JDs, but no course title covers them.
-3. **Modern AI application skills** (RAG, LLM APIs, FastAPI) may be missing from DS408 and CS205. I need the official syllabus units to confirm this.
-4. **Statistics** has no dedicated course, even though data analysts and ML evaluation need it.
+3. **Modern AI application skills** (RAG, LLM APIs, FastAPI) may be missing from DS408 and CS205. I need the official syllabus units to confirm this. The official title of CS205/AI208 is "Web Enabled Technologies (WEB 3.0)", which suggests a Web3 focus rather than REST APIs.
+4. **Statistics:** my batch's structure has no course titled statistics, but the newer official structure has **BS105 Probability & Statistics** in Sem III. So the college has already moved in this direction (reason R4).

@@ -1,0 +1,39 @@
+Run: py -m unittest -v   (date: 2026-10-23, Python 3.14.3)
+test_invalid_reason_is_missing_information (test_idcard_workflow.ApprovalBoundary.test_invalid_reason_is_missing_information) ... ok
+test_officer_can_approve_within_limit (test_idcard_workflow.ApprovalBoundary.test_officer_can_approve_within_limit) ... ok
+test_third_replacement_needs_admin_head (test_idcard_workflow.ApprovalBoundary.test_third_replacement_needs_admin_head) ... ok
+test_1_normal (test_idcard_workflow.FiveRequiredCases.test_1_normal)
+Complete request goes all the way to COLLECTED. ... ok
+test_2_missing_information (test_idcard_workflow.FiveRequiredCases.test_2_missing_information)
+No photo and no declaration -> NEEDS_INFO; recovers after the student adds them. ... ok
+test_3_duplicate (test_idcard_workflow.FiveRequiredCases.test_3_duplicate)
+A second request while one is still open is rejected and linked to the first. ... ok
+test_4_unauthorized_request (test_idcard_workflow.FiveRequiredCases.test_4_unauthorized_request)
+Someone else cannot request or collect another student's card; all three attempts are logged. ... ok
+test_5_failed_step (test_idcard_workflow.FiveRequiredCases.test_5_failed_step)
+Printer fails -> temporary pass + retry; fails again -> manual card fallback. ... ok
+test_cannot_skip_steps (test_idcard_workflow.ProofRules.test_cannot_skip_steps) ... ok
+test_damaged_card_must_be_handed_in (test_idcard_workflow.ProofRules.test_damaged_card_must_be_handed_in) ... ok
+test_fir_only_required_when_setting_is_on (test_idcard_workflow.ProofRules.test_fir_only_required_when_setting_is_on) ... ok
+test_student_cannot_change_whose_card_it_is (test_idcard_workflow.ProofRules.test_student_cannot_change_whose_card_it_is) ... ok
+test_matches_hand_calculation (test_savings.SavingsFormula.test_matches_hand_calculation) ... ok
+test_staff_can_lose_time (test_savings.SavingsFormula.test_staff_can_lose_time)
+With these values, staff save 8 min/request but pay all review/support/setup. ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
+
+Run: py savings.py
+Requests in period          : 360
+Minutes per request old/new : 110 / 37
+Gross saved                 :    26280 min
+- review effort             :      360 min
+- support effort            :      720 min
+- setup effort              :      600 min
+= NET saved                 :    24600 min  (410.0 hours)
+  of which students         : 390.0 hours
+  of which staff (net)      : 20.0 hours
+
+ILLUSTRATIVE RESULT: 14 of 14 values are not measured yet.

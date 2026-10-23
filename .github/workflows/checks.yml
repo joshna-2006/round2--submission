@@ -1,0 +1,24 @@
+name: checks
+# Re-runs every test and calculation in the repository on each upload,
+# so a reviewer can see the results were not just typed into the reports.
+on: [push, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Task 1 - workflow and time-saving tests
+        working-directory: task1-workflow/prototype
+        run: python -m unittest -v
+      - name: Task 1 - time-saving calculation
+        working-directory: task1-workflow/prototype
+        run: python savings.py
+      - name: Task 2 - credit calculation and data consistency
+        working-directory: task2-curriculum
+        run: python check_credits.py
+      - name: Task 2 - AI exercise verification
+        working-directory: task2-curriculum/ai-outputs
+        run: python verify.py

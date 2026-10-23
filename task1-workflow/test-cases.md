@@ -1,20 +1,20 @@
-# Synthetic Test Cases
+# 4. Five Synthetic Test Cases
 
-All data is fake (REQ-01 etc.). These are walk-throughs of the proposed design, **not real observations**. Approval limits are the example values from the report.
+These are **synthetic** cases (STU-A etc. are made up), run against the prototype as **automated tests**. They test the **design**, not the real college process.
 
-| # | Case | Input | Expected result | Final status | Recovery |
+| # | Case | Input | Expected result | Recovery | Automated test |
 |---|---|---|---|---|---|
-| 1 | **Normal** | REQ-01: CSE dept, 5 monitors, ₹40,000, 3 quotations attached | Needs only HOD + Dean (under ₹50,000). Both approve; Accounts issues the PO | Approved → PO-Issued → Delivered → Paid → Closed | – |
-| 2 | **Missing information** | REQ-02: lab PCs, ₹4 lakh, only **2 quotations** | The system won't move it to approval | Returned-for-Info | Department adds the 3rd quotation and resubmits; it continues from where it was |
-| 3 | **Duplicate** | REQ-03: CSE requests the same 5 monitors again within 30 days | Flagged as a possible duplicate of REQ-01 and linked to it | On-Hold | HOD confirms whether it's a genuine second need; if not, it is Rejected |
-| 4 | **Unauthorized request** | REQ-04: ₹8 lakh, and the HOD tries to give final approval | Blocked: above the HOD's limit. Routed to Dean → Director → VC | Under-Approval (VC level) | Logged for the Accounts audit; no PO can be raised without the right approvals |
-| 5 | **Failed step** | REQ-05: approved, but the vendor misses the delivery date by 2 weeks | Owner is alerted | On-Hold | Next-best quotation vendor is contacted; the PO is re-issued after approver sign-off |
+| 1 | Normal | STU-A, lost card, all fields complete | SUBMITTED → VERIFIED → APPROVED → READY → COLLECTED | – | `test_1_normal` ✅ |
+| 2 | Missing information | STU-B, no photo, no declaration | NEEDS_INFO listing both fields; the desk **cannot** verify it | Student adds both → back to SUBMITTED | `test_2_missing_information` ✅ |
+| 3 | Duplicate | STU-C submits again while the first request is open | Second request REJECTED and linked to the first; the first is untouched | Student follows the first request | `test_3_duplicate` ✅ |
+| 4 | Unauthorized request | STU-X requests STU-D's card; a student tries to approve; STU-X tries to collect STU-D's card | All three blocked and written to the security log; the card stays at the desk | Real owner collects with their own login | `test_4_unauthorized_request` ✅ |
+| 5 | Failed step | Printer fails twice | 1st failure: PRINT_FAILED + temporary pass. 2nd failure: manual card, READY | Student collects normally | `test_5_failed_step` ✅ |
 
-## Results (design walk-through, 2026-10-23)
-| # | Handled? | Note |
-|---|---|---|
-| 1 | Yes | Small purchases skip Director/VC, which is the main time saving |
-| 2 | Yes | Simple "3 files required" rule |
-| 3 | Yes | Needs a rule: same department + same item within 30 days |
-| 4 | Yes | Needs each user's approval limit stored |
-| 5 | Yes | Depends on keeping the other quotations on file |
+Extra tests (9): officer approval within the boundary, escalation of a 3rd replacement to the admin head, invalid or changed reason, no skipped steps, old card required for damaged cards, FIR only when the setting is on, the student reference cannot be changed, and two checks of the time-saving formula.
+
+## Actual test run
+Run on 2026-10-23 with Python 3 on this laptop (`py -m unittest -v` in `prototype/`). The output is saved in [prototype/test-output.txt](prototype/test-output.txt):
+```
+Ran 14 tests ... OK
+```
+The tests also run automatically on GitHub on every upload (see the badge in the main README).

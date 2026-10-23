@@ -1,55 +1,54 @@
-semester,code,course,current_credits,proposed_credits,action,roles,skills,reason_id,rationale
-1,CS101,Computer Programming,4,4,KEEP,DA;AI;FS,Programming fundamentals,,"Foundation for every role; Python is required in JD-1, JD-2 and JD-4."
-1,MT102,Engineering Graphics,3,1,REDUCE,,Technical drawing,R9,"Lower relevance to all three target roles; keep 1 credit of basic drafting as general engineering literacy. Needs regulatory check."
-1,EG101,English Language Skills,3,3,KEEP,DA;AI;FS,Communication,,"Communication is required in JD-1, JD-3 and JD-4."
-1,CH102,Environmental Sciences,2,2,KEEP,,Sustainability,,"Mandatory general-education course; not changed."
-1,HS101,Essence of Indian Traditional Knowledge,0,0,KEEP,,General education,,"Zero-credit mandatory course; not changed."
-1,MA101,Linear Algebra and Ordinary Differential Equations,3,3,KEEP,DA;AI,Linear algebra,,"Linear algebra underpins ML (JD-2 and JD-4)."
-1,PHY101,Physics,5,3,REDUCE,,Basic science,R9,"5 credits is the largest Sem I course; reduce to 3 and keep core physics. Must stay within basic-science credit rules."
-2,EC101,Basic Electronics,4,3,REDUCE,,Electronics,R9,"Reduce by 1; IoT and Embedded Systems later still build on it."
-2,CH101,Chemistry,4,2,REDUCE,,Basic science,R9,"Lower relevance to the target roles; keep 2 credits of core chemistry. Needs regulatory check."
-2,CS102,Data Structures,4,4,KEEP,DA;AI;FS,Data structures,,"DSA is explicitly required in JD-2."
-2,MT101,Digital Fabrication,3,2,REDUCE,,Fabrication,R9,"Reduce by 1; hands-on making is kept at a smaller scale."
-2,MA102,Higher Calculus,3,3,KEEP,AI,Calculus,,"Needed for gradient-based ML."
-2,DS101,Introduction to AI and DS,3,3,KEEP,DA;AI,AI/DS overview,,"Early motivation for the AI branch."
-2,EG102,Professional Communication,3,3,KEEP,DA;AI;FS,Communication,,"Supports communication requirements in the JDs."
-2,NEW-ST1,Applied Statistics and Probability for Data Analysis (proposed),0,3,ADD,DA;AI,Statistics; hypothesis testing; evaluation metrics,R4,"No dedicated statistics course found; JD-4 requires statistics for model evaluation and data analysts need it."
-3,DS201,Artificial Intelligence,3,3,KEEP,AI,Search; knowledge representation,,"Core of the AI branch."
-3,CS206,Database Management Systems,4,4,UPDATE,DA;FS,SQL; joins; aggregation; window functions,R2,"Add an assessed SQL lab with analytical queries; SQL is required in JD-1 and preferred in JD-3."
-3,MA202,Discrete Mathematics,3,3,KEEP,AI;FS,Logic; graphs,,"Foundation for algorithms."
-3,EC201,Introduction to IoT,3,3,KEEP,,IoT,,"Programme breadth; not changed."
-3,ML201,Mathematical Essentials for Machine Learning,3,3,KEEP,AI;DA,ML mathematics,,"Directly supports ML courses."
-3,CS201,Object Oriented Programming Concepts,4,4,KEEP,AI;FS,OOP,,"Java/Python OOP is preferred in JD-3 and JD-4."
-3,CR201,Power Skills-I,1,1,KEEP,DA;AI;FS,Soft skills,,"Not changed."
-3,HS201,Dynamics of Social Change,3,3,KEEP,,General education,,"General education; not changed."
-4,CS204,Computer Organization and Architecture,3,3,KEEP,AI,Hardware basics,,"Foundation for GPU and performance work (JD-4 CUDA)."
-4,CS203,Design and Analysis of Algorithms,3,3,KEEP,AI;FS,Algorithms,,"DSA required in JD-2."
-4,MG201,Engineering Economics and Management,3,3,KEEP,DA,Business basics,,"Supports business understanding for analysts."
-4,DS202,Industry Coding Practice (Python/R),3,3,UPDATE,DA;AI;FS,Git; code review; unit testing; clean code,R1,"Add Git workflow, code review and unit tests as assessed parts; JD-3 requires testing your own work and JD-4 asks for DevOps practice."
-4,CS302,Operating Systems,4,4,KEEP,AI;FS,OS; Linux,,"Linux knowledge required in JD-4."
-4,CR202,Power Skills-II,1,1,KEEP,DA;AI;FS,Soft skills,,"Not changed."
-4,DS301,Soft Computing,3,3,KEEP,AI,Fuzzy logic; GA,,"Branch content; not changed."
-4,CS205,Web-Enabled Technologies,4,4,UPDATE,FS;AI,REST APIs; frontend framework; backend framework; deployment,R3,"Add REST API design and a deployed multi-layer mini project; JD-3 requires work across two layers and JD-2 mentions FastAPI services."
-Summer-II,IP201,Internship-I,3,3,KEEP,DA;AI;FS,Industry exposure,,"Real project experience is valued in JD-3."
-5,DS303,Blockchain Technology,3,3,KEEP,,Blockchain,,"Kept; it could become an elective in future but that needs approval."
-5,CS306,Computer Networks,4,4,KEEP,FS,Networking; HTTP,,"Foundation for web and cloud."
-5,HS301,Constitution of India,0,0,KEEP,,General education,,"Mandatory zero-credit course."
-5,DS305,Data Wrangling and Visualization,3,3,UPDATE,DA,pandas; dashboards (Power BI/Tableau); reporting,R5,"Add an assessed dashboard project using a free BI tool; JD-1 mentions dashboards and reports."
-5,CS415,Ethical Hacking,3,3,KEEP,FS,Security,,"Supports application security."
-5,DS304,Machine Learning,4,4,KEEP,AI;DA,Supervised and unsupervised learning,,"ML fundamentals required in JD-2."
-5,CR301,Power Skills-III,1,1,KEEP,DA;AI;FS,Soft skills,,"Not changed."
-5,DS310,Predictive Analytics,3,3,UPDATE,DA,Forecasting; business case studies,R6,"Add business case studies with a written stakeholder report; JD-1 values understanding the domain and customers."
-5,NEW-SE1,Software Engineering and Testing Lab (proposed),0,2,ADD,FS;AI;DA,Git; CI; unit and integration testing; code review,R1,"No course covers testing or CI; testing is required in JD-3 and CI/CD is preferred in JD-3 and JD-4."
-6,DS307,Big Data Systems,3,3,KEEP,DA;AI,Hadoop; Spark,,"Big data skills support analysts and AI engineers."
-6,DS306,Deep Learning,3,3,KEEP,AI,Neural networks,,"Required for CV/NLP roles (JD-4)."
-6,EC308,Embedded Systems,3,3,KEEP,,Embedded,,"Branch breadth; not changed."
-6,CR302,Power Skills-IV,1,1,KEEP,DA;AI;FS,Soft skills,,"Not changed."
-6,SP301,Special Project,3,3,KEEP,DA;AI;FS,Project work,R10,"Kept; used as the pathway project slot (see pathways)."
-6,DS311,Natural Language Processing,3,3,KEEP,AI,NLP,,"NLP pipelines are part of JD-2's work."
-6,DS309,Pattern Recognition,3,3,KEEP,AI,Pattern recognition,,"Supports ML depth."
-7,CS305,Computer Vision,3,3,KEEP,AI,Computer vision,,"Directly matches JD-4."
-7,CS307,Cloud Computing,4,4,UPDATE,AI;FS,Containers; cloud deployment; monitoring,R7,"Add an assessed deployment lab (Docker plus a free-tier cloud); JD-3 and JD-4 mention deployment and DevOps."
-7,CS413,Quantum Computing,3,3,KEEP,,Quantum,,"Kept for long-term learning value."
-7,DS408,Generative AI,3,3,UPDATE,AI,LLM APIs; RAG; evaluation; responsible use,R8,"Add RAG and LLM-output validation; JD-2 describes RAG and LLM features and JD-1 asks for validating AI output."
-7,HS206,Professional Ethics,3,3,KEEP,DA;AI;FS,Ethics,,"Ethics also supports responsible AI."
-7,NEW-CP1,Capstone: Purchase Approval Workflow (proposed),0,3,ADD,FS;AI;DA,Workflow design; statuses; testing; metrics,R10,"Turns the Task 1 workflow into an assessed build-and-test project; JD-3 requires a shipped multi-layer project."
+semester,code,course,current_credits,proposed_credits,action,roles,skills,reason_id,rationale,official_comparison
+1,CS101,Computer Programming,4,4,KEEP,DA;AI;FS,Programming fundamentals,,Kept unchanged.,match
+1,MT102,Engineering Graphics,3,2,REDUCE,,,R10,"Reduce 3 to 2; keep sketching and drawing basics. My judgement, not on the official page.",match
+1,EG101,English Language Skills,3,3,KEEP,DA;AI;FS,Communication,,Kept unchanged.,match
+1,CH102,Environmental Sciences,2,2,KEEP,,,,Kept unchanged.,semester differs
+1,HS101,Essence of Indian Traditional Knowledge,0,0,KEEP,,,,Kept unchanged.,title differs (official: Understanding India)
+1,MA101,Linear Algebra and Ordinary Differential Equations,3,3,KEEP,DA;AI,Linear algebra,,Kept unchanged.,match
+1,PHY101,Physics,5,4,REDUCE,,,R10,"Reduce 5 to 4, the same as BS102 Physics in the official structure; core physics kept.",credits differ
+2,EC101,Basic Electronics,4,3,REDUCE,,,R10,Reduce 4 to 3; IoT and Embedded Systems still build on it. My judgement.,match
+2,CH101,Chemistry,4,4,KEEP,,,,Kept unchanged.,semester differs
+2,CS102,Data Structures,4,4,KEEP,DA;AI;FS,Data structures,,Kept unchanged.,match
+2,MT101,Digital Fabrication,3,3,KEEP,,,,Kept unchanged.,match
+2,MA102,Higher Calculus,3,3,KEEP,AI,Calculus,,Kept unchanged.,match
+2,DS101,Introduction to AI and DS,3,3,KEEP,DA;AI,AI/DS overview,,Kept unchanged.,match
+2,EG102,Professional Communication,3,3,KEEP,DA;AI;FS,Communication,,Kept unchanged.,match
+3,DS201,Artificial Intelligence,3,3,KEEP,AI,Search; knowledge representation,,Kept unchanged.,match
+3,CS206,Database Management Systems,4,4,UPDATE,DA;FS,SQL; joins; aggregation; window functions,R2,Add an assessed analytical SQL lab; SQL is required in JD-1.,match
+3,MA202,Discrete Mathematics,3,3,KEEP,AI;FS,Logic; graphs,,Kept unchanged.,semester differs
+3,EC201,Introduction to IoT,3,3,KEEP,,,,Kept unchanged.,match
+3,ML201,Mathematical Essentials for Machine Learning,3,3,UPDATE,DA;AI,Probability; statistics; ML mathematics,R4,"Add probability and statistics units (hypothesis tests, metrics), as BS105 in the official structure; JD-4 needs statistics for model evaluation.",not on official page (official Sem III has BS105 Probability & Statistics instead)
+3,CS201,Object Oriented Programming Concepts,4,4,KEEP,AI;FS,OOP,,Kept unchanged.,match
+3,CR201,Power Skills-I,1,1,KEEP,DA;AI;FS,Soft skills,,Kept unchanged.,match
+3,HS201,Dynamics of Social Change,3,3,KEEP,,,,Kept unchanged.,probably fills the Digital Humanities Elective slot
+4,CS204,Computer Organization and Architecture,3,3,KEEP,AI,Hardware basics,,Kept unchanged.,match
+4,CS203,Design and Analysis of Algorithms,3,3,KEEP,AI;FS,Algorithms,,Kept unchanged.,semester differs
+4,MG201,Engineering Economics and Management,3,3,KEEP,DA,Business basics,,Kept unchanged.,semester differs
+4,DS202,Industry Coding Practice (Python/R),3,3,UPDATE,DA;AI;FS,Git; code review; unit testing,R1,"Add Git, code review and unit tests as assessed work; the official ES202 already has 4 credits with lab hours.",credits differ
+4,CS302,Operating Systems,4,4,KEEP,AI;FS,OS; Linux,,Kept unchanged.,match
+4,CR202,Power Skills-II,1,1,KEEP,DA;AI;FS,Soft skills,,Kept unchanged.,match
+4,DS301,Soft Computing,3,3,KEEP,AI,Fuzzy logic; GA,,Kept unchanged.,match
+4,CS205,Web-Enabled Technologies,4,4,UPDATE,FS;AI,REST APIs; frontend + backend; deployment,R3,Add REST API design and a deployed two-layer project; JD-3 requires work across two layers.,match (official title: Web Enabled Technologies (WEB 3.0))
+Summer-II,IP201,Internship-I,3,3,KEEP,DA;AI;FS,Industry exposure,,Kept unchanged.,credits differ
+5,DS303,Blockchain Technology,3,3,KEEP,,,,Kept unchanged.,match
+5,CS306,Computer Networks,4,4,KEEP,FS,Networking; HTTP,,Kept unchanged.,match
+5,HS301,Constitution of India,0,0,KEEP,,,,Kept unchanged.,match
+5,DS305,Data Wrangling and Visualization,3,3,UPDATE,DA,pandas; dashboards; reporting,R5,Add an assessed dashboard project with a free BI tool; JD-1 mentions dashboards and reports.,match
+5,CS415,Ethical Hacking,3,3,KEEP,FS,Security,,Kept unchanged.,probably fills the Elective-I slot
+5,DS304,Machine Learning,4,4,UPDATE,AI;DA,ML; evaluation; experiment tracking,R9,"Add one end-to-end project: data, training, evaluation with confidence intervals, tracked experiments; JD-4.",match
+5,CR301,Power Skills-III,1,1,KEEP,DA;AI;FS,Soft skills,,Kept unchanged.,match
+5,DS310,Predictive Analytics,3,3,UPDATE,DA,Forecasting; business cases,R6,Add business case studies with a written recommendation; JD-1 asks for understanding the domain and customers.,match
+5,NEW-SE1,Software Testing and DevOps Lab (proposed),0,3,ADD,FS;AI;DA,Git workflow; unit and integration tests; CI pipeline; code review,R1,No course in either structure is about testing or CI; JD-3 requires testing your own work; JD-3 and JD-4 mention CI/CD or DevOps.,"proposed, not on official page"
+6,DS307,Big Data Systems,3,3,KEEP,DA;AI,Hadoop; Spark,,Kept unchanged.,match
+6,DS306,Deep Learning,3,3,KEEP,AI,Neural networks,,Kept unchanged.,credits differ
+6,EC308,Embedded Systems,3,3,KEEP,,,,Kept unchanged.,probably fills the Elective-II slot
+6,CR302,Power Skills-IV,1,1,KEEP,DA;AI;FS,Soft skills,,Kept unchanged.,match
+6,SP301,Special Project,3,3,UPDATE,DA;AI;FS,Team project; workflow app; testing,R11,Offer the Task 1 workflow project (ID card replacement system) as a Special Project option; JD-3 requires a shipped project.,match
+6,DS311,Natural Language Processing,3,3,KEEP,AI,NLP,,Kept unchanged.,match
+6,DS309,Pattern Recognition,3,3,KEEP,AI,Pattern recognition,,Kept unchanged.,not on official page (may be a professional elective)
+7,CS305,Computer Vision,3,3,KEEP,AI,Computer vision,,Kept unchanged.,semester differs
+7,CS307,Cloud Computing,4,4,UPDATE,AI;FS,Containers; cloud deployment,R7,Add an assessed deployment lab (Docker + free tier); JD-3 and JD-4 mention deployment.,not on official page (Sem VII lists Electives PE/OE (5))
+7,CS413,Quantum Computing,3,3,KEEP,,,,Kept unchanged.,not on official page (Sem VII lists Electives PE/OE (5))
+7,DS408,Generative AI,3,3,UPDATE,AI,LLM APIs; RAG; output validation,R8,Add a RAG lab and an AI-output verification exercise; JD-2 describes RAG; my AI exercise 5 found outdated AI output.,not on official page (Sem VII lists Electives PE/OE (5))
+7,HS206,Professional Ethics,3,3,KEEP,DA;AI;FS,Ethics,,Kept unchanged.,not on official page (Sem VII lists Electives PE/OE (5))
+8,IP401,Internship Program / Research,15,15,KEEP,DA;AI;FS,Industry internship,,Kept unchanged.,from official page only (my Sem VIII is the internship; not in my screenshots)

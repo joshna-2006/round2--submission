@@ -1,0 +1,17 @@
+{
+  "_note": "Every value is ILLUSTRATIVE until replaced with a measured value. To update: change 'value', set 'label' to 'observed' and fill 'source' with the evidence-log entry number (e.g. 'E3').",
+  "requests_per_month":          {"value": 30,  "unit": "requests", "label": "illustrative", "source": "to measure: count from ID desk register (count only)"},
+  "old_student_visits":          {"value": 3,   "unit": "visits",   "label": "illustrative", "source": "to measure: student check sheet, question 4"},
+  "old_minutes_per_visit":       {"value": 30,  "unit": "min",      "label": "illustrative", "source": "to measure: student check sheet, question 5"},
+  "old_staff_minutes":           {"value": 20,  "unit": "min",      "label": "illustrative", "source": "to measure: ID desk interview, question 6"},
+  "new_student_online_minutes":  {"value": 10,  "unit": "min",      "label": "illustrative", "source": "design estimate: filling the online form"},
+  "new_student_visits":          {"value": 1,   "unit": "visits",   "label": "illustrative", "source": "design: one visit to collect"},
+  "new_minutes_per_visit":       {"value": 15,  "unit": "min",      "label": "illustrative", "source": "design estimate"},
+  "new_staff_minutes":           {"value": 12,  "unit": "min",      "label": "illustrative", "source": "design estimate: check + print + hand over"},
+  "escalation_rate":             {"value": 0.10,"unit": "share",    "label": "illustrative", "source": "design estimate: repeat replacements"},
+  "review_minutes_per_escalation":{"value": 10, "unit": "min",      "label": "illustrative", "source": "design estimate: admin head review"},
+  "support_rate":                {"value": 0.20,"unit": "share",    "label": "illustrative", "source": "design estimate: students needing help with the form"},
+  "support_minutes":             {"value": 10,  "unit": "min",      "label": "illustrative", "source": "design estimate"},
+  "setup_minutes_one_time":      {"value": 600, "unit": "min",      "label": "illustrative", "source": "design estimate: build form + sheet + train desk (10 h)"},
+  "months":                      {"value": 12,  "unit": "months",   "label": "illustrative", "source": "period for the calculation"}
+}

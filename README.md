@@ -1,46 +1,62 @@
-# Round 2 Submission – Joshna
+# HKAIVERSE Round 2 – Joshna
 
-B.Tech CSE (Artificial Intelligence), ICFAI Foundation for Higher Education (IFHE), Hyderabad. Admission batch 2023–2027.
+[![checks](https://github.com/joshna-2006/round2--submission/actions/workflows/checks.yml/badge.svg)](https://github.com/joshna-2006/round2--submission/actions/workflows/checks.yml)
 
-> This is student work. It is not an official syllabus revision. All test data is synthetic. No student names, IDs, marks, fees, credentials or private messages are included.
+B.Tech CSE (Artificial Intelligence), IFHE Hyderabad, batch 2023–2027.
+
+> Student work. Not an official syllabus revision. All test data is synthetic. No student names, IDs, marks, fee amounts, credentials or private messages are included.
 
 ## Release
-- Release: **v1.0-round2 "Round 2 Submission"**: https://github.com/joshna-2006/round2--submission/releases/tag/v1.0-round2
-- Full commit URL of the submitted revision: https://github.com/joshna-2006/round2--submission/commit/6de82cb5efe0acd2d824196f01b9cd08159a2279
+- Release: **[to be added after the release is published]**
+- Full commit URL of the reviewed revision: **[to be added]**
 
-The release points to the commit above, which is the version for review. This README line was added in a later commit, only to record these two links.
+## The two tasks at a glance
+| | Task 1 – College workflow | Task 2 – Curriculum audit |
+|---|---|---|
+| **Topic** | Replacing a lost or damaged **student ID card** | CSE (AI) curriculum vs. **Data Analyst, AI Engineer, Full Stack** roles |
+| **Main idea** | One tracked request with proof checked online, a clear owner, an approval boundary for repeat replacements, and a temporary pass when printing fails | Engineering practice (testing, Git/CI, deployment, checking AI output) is the main gap. 10 updates, 3 small reductions, 1 new lab |
+| **Built** | Working Python prototype: **14 automated tests** incl. the 5 required cases; time-saving calculator | Credit checker, interactive calculator, AI-exercise checks (**9 of 9**) |
+| **Key number** | Net time saved: *method done; numbers illustrative until measured* | **37 of 166 credits affected (22.3%)**, balanced. 24.5% if Sem VIII is excluded |
+| **Strongest evidence** | Two other universities' published procedures (3 and 5 office sign-offs) | **IFHE's official program-structure page**, compared course by course with my own course list |
+| **Start here** | [task1-workflow/README.md](task1-workflow/README.md) | [task2-curriculum/report.md](task2-curriculum/report.md) |
 
-## What's inside
-| Folder / file | Contents |
+## What is finished and what is not
+| Item | Status |
 |---|---|
-| [task1-workflow/](task1-workflow/) | Task 1: department equipment purchase approval study, with evidence log, current vs. proposed process, 5 synthetic test cases and the time-saved calculation |
-| [task2-curriculum/report.md](task2-curriculum/report.md) | Task 2: full audit (sections A–L): Version 1, job-role alignment, Version 2, 11 reasons, credit calculation, capstone |
-| [task2-curriculum/job-description-analysis.md](task2-curriculum/job-description-analysis.md) | 3 real dated job postings plus the recruiter JD, and a skills matrix |
-| [task2-curriculum/current-curriculum.csv](task2-curriculum/current-curriculum.csv) / [proposed-curriculum.csv](task2-curriculum/proposed-curriculum.csv) | Version 1 and Version 2 data |
-| [task2-curriculum/ai-exercises.md](task2-curriculum/ai-exercises.md) | 5 AI-assisted exercises with independent verification |
-| [task2-curriculum/calculator/](task2-curriculum/calculator/) | Interactive credit calculator, with tests |
-| [sources/source-register.md](sources/source-register.md) | All sources with URLs and access dates |
-| [ai-use-record.md](ai-use-record.md) | Where AI was used and what I verified |
+| Task 1 design, prototype, 5 tests, time-saving method | ✅ Done and tested |
+| Task 1 **evidence from IFHE** (ID desk + students) | ⏳ **Not collected yet.** The current process is a labelled hypothesis. Questions and sheets are ready in [task1-workflow/evidence/](task1-workflow/evidence/) |
+| Task 1 real time-saving figure | ⏳ Needs the measured values above |
+| Task 2 credit map, comparison with the official page, proposal, 11 reasons, credit calculation, pathways, capstone | ✅ Done |
+| Task 2 five-unit analysis | ⚠️ Done for the one handout I have (DS401). Priority courses need handouts |
+| Task 2 job descriptions | ✅ 3 dated + 1 undated · ⚠️ JD-2 only partly verified |
+| Task 2 five AI exercises | ✅ Done and automatically re-checked |
+| Faculty feedback on the redesign | ⏳ Message ready; none received |
+| AI-use record, sources, limitations | ✅ |
 
-## How to run the calculator
-Open `task2-curriculum/calculator/index.html` in any browser. Nothing needs installing.
+## Check it yourself
+Python 3 only, nothing to install. The same commands run on GitHub on every upload (badge above).
+```bash
+cd task1-workflow/prototype && py -m unittest -v && py savings.py && cd ../..
+cd task2-curriculum && py check_credits.py && cd ai-outputs && py verify.py
+```
+Interactive calculator: `task2-curriculum/calculator/index.html` (double-click), or online once GitHub Pages is on: https://joshna-2006.github.io/round2--submission/task2-curriculum/calculator/
 
-## Key results
-- **Task 1:** Equipment purchases move as a paper file through HOD → Dean → Director → VC → Governing Body, so nobody can see where a request is stuck, and missing quotations send it back. My proposal is one tracked request that is checked for completeness at the start, with amount-based approval limits so small purchases skip the top levels. Estimated net saving is **~510 staff hours per year** (all figures are estimates).
-- **Task 2:** Proposed changes affect **32 of 151 credits (21.2%)**, with the total kept balanced at 151. Seven courses are updated, five basic-science/engineering courses are reduced by 8 credits, and three courses are added (Applied Statistics, Software Engineering & Testing Lab, Workflow Capstone). The biggest gap found was **engineering practice** (testing, Git, deployment), which 3 of 4 job descriptions ask for.
+## Repository map
+```
+task1-workflow/        README · problem-selection · current-process (hypothesis) · proposed-process
+                       test-cases · time-saving · evidence/ (log, questions, sheet, benchmarks) · prototype/ (code + tests)
+task2-curriculum/      report · current-curriculum.csv (with official comparison) · proposed-curriculum.csv
+                       job-description-analysis · units-analysis · ai-exercises · feedback-request
+                       check_credits.py · calculator/ · ai-outputs/verify.py
+sources/               source-register (every URL with access date)
+ai-use-record.md       where AI was used, and what I did myself
+.github/workflows/     automatic checks
+```
 
 ## Personal contribution
-To be honest about it: most of the research, writing and code was done with an AI assistant (Claude), and I've disclosed this in [ai-use-record.md](ai-use-record.md). My own part was:
-- Chose the 3 target job roles (Data Analyst, AI Engineer, Full Stack Developer)
-- Talked to a faculty member about how college purchases and approvals work, and chose the Task 1 process (equipment purchase approval) from that conversation
-- Provided my curriculum course list (Sem I–VII) from my student portal, and the DS401 HCI course handout
-- Reviewed the drafts, and set up and uploaded this GitHub repository
+See [ai-use-record.md](ai-use-record.md) for the full split between my work and the AI assistant's.
 
-## Limitations
-- The official curriculum PDF, curriculum version and academic regulations were not publicly available. Credits come from my portal screenshots.
-- Semester VIII (internship) credits are unverified, so the total and percentage may change.
-- Only one course (DS401) had official unit-level detail. Other alignment ratings are based on course titles.
-- Four job descriptions are a sample, not the whole market.
-- Faculty feedback: a request message was prepared ([feedback-request.md](task2-curriculum/feedback-request.md)), but no feedback was received before the deadline. The redesign is based only on the documented sources and my analysis.
-- Task 1: only the faculty member's summary is real evidence. The Accounts/purchase office wasn't contacted before the deadline, so the step order, approval limits and numbers are assumptions or estimates.
-- Much of the drafting was AI-assisted (see [ai-use-record.md](ai-use-record.md)).
+## Limitations (summary)
+- **Task 1:** IFHE's actual process hasn't been observed yet. Benchmarks are from other universities. All time figures are illustrative.
+- **Task 2:** IFHE's official structure states no batch or version, and 22 of my 52 courses differ from it. Regulations weren't available. Unit-level evidence covers one course only.
+- Most drafting and code was done with an AI assistant. Everything that can be checked is checked by code, not by trust.

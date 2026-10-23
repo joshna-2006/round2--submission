@@ -2,7 +2,9 @@
 
 - **Model:** Claude Opus 5.5 (Anthropic), used through the Claude desktop app
 - **Date:** 2026-10-23
-- **How I checked:** I ran the code and SQL in [ai-outputs/verify.py](ai-outputs/verify.py) with Python 3 and SQLite, and compared the cloud claims with official AWS pages.
+- **Who did what:** the prompts were sent to, and answered by, the AI assistant. The checks are independent of the AI's answer: code was run, SQL was executed on a database built to contain a trap, metrics were calculated by hand, and cloud claims were compared with official AWS pages.
+- **Repeatable:** `py verify.py` in [ai-outputs/](ai-outputs/) re-runs checks 1–4 and fails loudly if any answer is wrong (9 of 9 checks pass). The same script runs on GitHub on every upload.
+- ☐ **I re-ran `verify.py` myself and got 9 of 9** (tick after doing it)
 
 | # | Subject | Result |
 |---|---|---|

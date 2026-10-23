@@ -5,8 +5,10 @@ B.Tech CSE (Artificial Intelligence), ICFAI Foundation for Higher Education (IFH
 > This is student work. It is not an official syllabus revision. All test data is synthetic. No student names, IDs, marks, fees, credentials or private messages are included.
 
 ## Release
-- Release: [paste release link, e.g. https://github.com/USERNAME/round2-submission/releases/tag/v1.0-round2]
-- Full commit URL: [paste, e.g. https://github.com/USERNAME/round2-submission/commit/<40-character hash>]
+- Release: **v1.0-round2 "Round 2 Submission"**: https://github.com/joshna-2006/round2--submission/releases/tag/v1.0-round2
+- Full commit URL of the submitted revision: https://github.com/joshna-2006/round2--submission/commit/6de82cb5efe0acd2d824196f01b9cd08159a2279
+
+The release points to the commit above, which is the version for review. This README line was added in a later commit, only to record these two links.
 
 ## What's inside
 | Folder / file | Contents |

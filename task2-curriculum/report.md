@@ -253,7 +253,7 @@ Based on [Task 1](../task1-workflow/report.md). The Task 1 figures are estimates
 
 ## J. Faculty / graduate feedback and limitations
 
-Feedback request message and record: [feedback-request.md](feedback-request.md). [TO FILL: who was contacted (role only), when, and the responses, or the "no response" statement.]
+Feedback request message and record: [feedback-request.md](feedback-request.md). No faculty or graduate feedback was received before the submission deadline. The redesign is therefore based only on the documented sources and my own analysis, and hasn't been checked by faculty.
 
 **Limitations:**
 1. Course list and credits come from screenshots, not the official curriculum PDF. The curriculum version and regulations were not available.

@@ -1,4 +1,4 @@
-# Round 2 Submission – [Your Name]
+# Round 2 Submission – Joshna
 
 B.Tech CSE (Artificial Intelligence), ICFAI Foundation for Higher Education (IFHE), Hyderabad. Admission batch 2023–2027.
 
@@ -28,18 +28,18 @@ Open `task2-curriculum/calculator/index.html` in any browser. Nothing needs inst
 - **Task 2:** Proposed changes affect **32 of 151 credits (21.2%)**, with the total kept balanced at 151. Seven courses are updated, five basic-science/engineering courses are reduced by 8 credits, and three courses are added (Applied Statistics, Software Engineering & Testing Lab, Workflow Capstone). The biggest gap found was **engineering practice** (testing, Git, deployment), which 3 of 4 job descriptions ask for.
 
 ## Personal contribution
-[TO FILL HONESTLY, e.g.:]
-- Chose the target roles and the Task 1 process
-- Collected the course list from my student portal and the DS401 handout
-- [Task 1: what I observed or asked, and when]
-- Ran the 5 AI exercises myself and checked each answer
-- Opened and confirmed each job posting
-- Reviewed every recommendation and changed [...]
+To be honest about it: most of the research, writing and code was done with an AI assistant (Claude), and I've disclosed this in [ai-use-record.md](ai-use-record.md). My own part was:
+- Chose the 3 target job roles (Data Analyst, AI Engineer, Full Stack Developer)
+- Chose the Task 1 process (admission document verification), because I went through it myself
+- Provided my own joining experience as Task 1 evidence: about 3 hours, and the documents I was asked for
+- Provided my curriculum course list (Sem I–VII) from my student portal, and the DS401 HCI course handout
+- Reviewed the drafts, and set up and uploaded this GitHub repository
 
 ## Limitations
 - The official curriculum PDF, curriculum version and academic regulations were not publicly available. Credits come from my portal screenshots.
 - Semester VIII (internship) credits are unverified, so the total and percentage may change.
 - Only one course (DS401) had official unit-level detail. Other alignment ratings are based on course titles.
 - Four job descriptions are a sample, not the whole market.
-- Faculty feedback: [received / not received before the deadline].
+- Faculty feedback: a request message was prepared ([feedback-request.md](task2-curriculum/feedback-request.md)), but no feedback was received before the deadline. The redesign is based only on the documented sources and my analysis.
+- Task 1: admissions staff were not interviewed before the deadline. Only my own joining experience is real evidence; everything else is an estimate or assumption.
 - Much of the drafting was AI-assisted (see [ai-use-record.md](ai-use-record.md)).

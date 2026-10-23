@@ -54,9 +54,9 @@ ai-use-record.md       where AI was used, and what I did myself
 ```
 
 ## Personal contribution
-See [ai-use-record.md](ai-use-record.md) for the full split between my work and the AI assistant's.
+See [ai-use-record.md](ai-use-record.md): my decisions and inputs, where an AI assistant helped, and how each part was checked.
 
 ## Limitations (summary)
 - **Task 1:** IFHE's actual process hasn't been observed yet. Benchmarks are from other universities. All time figures are illustrative.
 - **Task 2:** IFHE's official structure states no batch or version, and 22 of my 52 courses differ from it. Regulations weren't available. Unit-level evidence covers one course only.
-- Most drafting and code was done with an AI assistant. Everything that can be checked is checked by code, not by trust.
+- An AI assistant helped with research, drafting and code (see the AI-use record). Every number is recomputed by code, not taken on trust.
